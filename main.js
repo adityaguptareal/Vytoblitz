@@ -4,7 +4,7 @@ const port = 3000
 const { userRouter } = require("./Routes/userRoutes")
 const { adminRouter } = require("./Routes/adminRoutes")
 const mongoose = require("mongoose")
-const dotenv = require('dotenv')
+require('dotenv').config()
 const MONGODB_URL = process.env.MONGODB_URL
 app.use(express.json())
 
@@ -19,7 +19,6 @@ async function main() {
     }
     app.listen(port, () => {
         console.log('App is running at port', port);
-        console.log(MONGODB_URL);
         
 
     })

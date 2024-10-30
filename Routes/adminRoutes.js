@@ -29,7 +29,9 @@ adminRouter.post("/signup", async function (req, res) {
         res.status(400).json({ error: err })
     }
 })
-
+adminRouter.get("/",function (req,res) {
+    res.json({msg:"You are on the admin endpoint"})
+})
 adminRouter.post("/signin", async function (req, res) {
     const requiredData = z.object({
         email: z.string().min(2).max(30),
