@@ -6,6 +6,8 @@ const { userModel} = require("../db/databse")
 userRouter.get("/",function (req,res) {
     res.json({msg:"You are on the user endpoint"})
 })
+
+
 userRouter.post("/signup", async function (req, res) {
     const requiredData = z.object({
         email: z.string().min(3),
