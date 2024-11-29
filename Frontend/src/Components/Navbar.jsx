@@ -37,27 +37,27 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex flex-col lg:flex-row lg:items-center lg:gap-6 absolute lg:relative lg:bg-transparent top-16 lg:top-0 left-0 w-full lg:w-auto p-4  `}
+          } lg:flex flex-col lg:flex-row lg:items-center lg:gap-1 absolute lg:relative top-16 lg:top-0 left-0 w-full lg:w-auto 
+            p-4 bg-black lg:bg-transparent sm:h-screen lg:h-auto z-40`}
         >
-          <a href="#home" className="block py-2 px-4     md:py-0 hover:scale-[1.2] hover:transit">
+          <a href="#home" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
             Home
           </a>
-          <a href="#events" className="block py-2 px-4   md:py-0 hover:scale-[1.2] hover:transit">
+          <a href="#events" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
             Events
           </a>
           <a
             href="#coordinators"
-            className="block py-2 px-4   md:py-0 hover:scale-[1.2] hover:transit"
+            className="block py-2 px-4 hover:scale-[1.2] transition-transform"
           >
             Coordinators
           </a>
-          <a href="#volunteers" className="block py-2 px-4   md:py-0 hover:scale-[1.2] hover:transit">
+          <a href="#volunteers" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
             Volunteers
           </a>
-          <div className="flex gap-5">
-
-          <Button text="Signup"/>
-          <Button text="Login" />
+          <div className="flex gap-3 py-2">
+            <Button text="Signup" />
+            <Button text="Login" />
           </div>
         </div>
       </div>

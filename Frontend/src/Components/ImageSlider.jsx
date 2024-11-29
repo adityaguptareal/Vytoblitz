@@ -1,24 +1,39 @@
 import React from "react";
 import "../App.css"; // Import the custom styles for animation
-import BinaryBeasts from "../assets/Landingpage/Binary Beasts.png";
-import CodeWarriors from "../assets/Landingpage/Code Warriors.png"
-import Error404 from "../assets/Landingpage/Error 404.png"
-import MixiFyDev from "../assets/Landingpage/MixiFy Dev.png"
 
 const ImageSlider = () => {
+  const headings = [
+    "Binary Beasts",
+    "Code Warriors",
+    "Error 404",
+    "MixiFy Dev",
+    "Tech Titans",
+  ]; // Array of headings
+
   return (
-    <div className="overflow-hidden relative w-full h-[60px] bg-gradient-to-r from-purple-500 to-blue-500">      <div className="image-slider flex gap-8">
-        {/* Replace these images with your set of logos or images */}
-        <img src={BinaryBeasts} alt="Logo 1" className="w-32 h-32 object-contain" />
-        <img src={CodeWarriors} alt="Logo 2" className="w-32 h-32 object-contain" />
-        <img src={Error404} alt="Logo 3" className="w-32 h-32 object-contain" />
-        <img src={MixiFyDev} alt="Logo 4" className="w-32 h-32 object-contain" />
-        {/* You can duplicate the images here for continuous flow */}
-        <img src={BinaryBeasts} alt="Logo 1" className="w-32 h-32 object-contain" />
-        <img src={CodeWarriors} alt="Logo 2" className="w-32 h-32 object-contain" />
-        <img src={Error404} alt="Logo 3" className="w-32 h-32 object-contain" />
-        <img src={MixiFyDev} alt="Logo 4" className="w-32 h-32 object-contain" />
-        </div>
+    <div className="overflow-hidden relative w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center my-6">
+      {/* Scrolling container */}
+      <div className="image-slider flex  gap-12 animate-scroll">
+        {/* Dynamically render the headings */}
+        {headings.map((heading, index) => (
+          <h1
+            key={index}
+            className="text-white font-Orbitron font-bold text-2xl whitespace-nowrap"
+          >
+            {heading}
+          </h1>
+        ))}
+
+        {/* Duplicate the headings for continuous scrolling */}
+        {headings.map((heading, index) => (
+          <h1
+            key={`duplicate-${index}`}
+            className="text-white font-Orbitron font-bold text-2xl whitespace-nowrap"
+          >
+            {heading}
+          </h1>
+        ))}
+      </div>
     </div>
   );
 };

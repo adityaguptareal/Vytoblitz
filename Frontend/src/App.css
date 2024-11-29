@@ -1,15 +1,29 @@
-/* Add this CSS in your styles.css file */
+/* Scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 .image-slider {
-    animation: scroll 40s linear infinite;
+  display: flex;
+  animation: scroll 40s linear infinite; /* Smooth and continuous scrolling */
+}
+
+@media (max-width: 768px) {
+  .image-slider h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%); /* Start from beyond the right */
-    }
-    100% {
-      transform: translateX(-100%); /* Move all the way to the left */
-    }
+}
+
+@media (max-width: 480px) {
+  .image-slider h1 {
+    font-size: 1rem; /* Further adjust for mobile screens */
   }
-  
+}
+::-webkit-scrollbar {
+  display: none;
+}
