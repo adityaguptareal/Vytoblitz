@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
         <div>
-          <h1 className='font-Orbitron font-extrabold text-4xl text-center m-16'>Hackathons Teams</h1>
+          {/* <h1 className='font-Orbitron font-extrabold text-4xl text-center m-16'>Hackathons Teams</h1> */}
           <CardSlider />
 
         </div>
