@@ -44,7 +44,7 @@ const Navbar = () => {
             Home
           </a>
           <a href="#events" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
-            Events
+            Participant
           </a>
           <a
             href="#coordinators"
@@ -56,7 +56,7 @@ const Navbar = () => {
             Volunteers
           </a>
           <div className="flex gap-3 py-2">
-            <Button text="Signup" />
+            {/* <Button text="Signup" /> */}
             <Button text="Login" />
           </div>
         </div>

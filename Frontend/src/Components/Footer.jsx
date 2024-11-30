@@ -31,7 +31,7 @@ function Footer() {
              <MdWhatsapp className='text-4xl' />
             </a>
             </div>
-            <div> © VytoFlowTech {year} | site deisgned by <a href="http://adityaguptareal.com/" className='cursor-pointer text-purple-400 ' target='_blank'>Aditya Kumar Gupta ❤️</a></div>
+            <div className='text-center'> © VytoFlowTech {year} <br /> site deisgned by <a href="http://adityaguptareal.com/" className='cursor-pointer text-purple-400 ' target='_blank'>Aditya Kumar Gupta ❤️</a></div>
 
         </div>
     )
