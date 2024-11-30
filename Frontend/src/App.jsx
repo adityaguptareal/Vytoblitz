@@ -87,7 +87,7 @@ function App() {
           <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
 
 {/* Cultural */}
-          <EventCard src={Images.Cultural} date={"Thu 28th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
         </div>
       </div>
     </>
