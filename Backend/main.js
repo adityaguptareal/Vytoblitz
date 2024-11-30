@@ -1,27 +1,25 @@
-const express = require("express")
-const app = express()
-const port = 3000
-const { userRouter } = require("./Routes/userRoutes")
-const { adminRouter } = require("./Routes/adminRoutes")
-const mongoose = require("mongoose")
-require('dotenv').config()
-const MONGODB_URL = process.env.MONGODB_URL
+require("dotenv").config()
+const express=require("express")
+const mongoose=require("mongoose")
+const app=express()
+const port=process.env.port
+const {userRouter}=require("./Routes/UserRoutes")
+const MONGODB_URI=process.env.MONGODB_URI
 app.use(express.json())
 
-app.use("/api/v1/user", userRouter)
-app.use("/api/v1/admin", adminRouter)
+app.use("/api/v1/user",userRouter)
+// app.use("/api/v1/admin")
+
 async function main() {
     try {
-        await mongoose.connect(MONGODB_URL)
+        await mongoose.connect(MONGODB_URI)
     } catch (error) {
-        console.log(error);
-
+        console.log(error)
     }
-    app.listen(port, () => {
-        console.log('App is running at port', port);
-        
-
-    })
-
 }
 main()
+
+app.listen(port,()=>{
+    console.log('App is running at',port);
+    
+})
