@@ -3,6 +3,11 @@ import "../App.css"; // Import the custom styles for animation
 
 const ImageSlider = () => {
   const headings = [
+    "Programming Quiz",
+    "VytoHack Clash",
+    "Elite Combat",
+    "Artistry Arnea",
+    "Cultural Carnival",
     "Binary Beasts",
     "Code Warriors",
     "Error 404",
@@ -11,7 +16,7 @@ const ImageSlider = () => {
   ]; // Array of headings
 
   return (
-    <div className="overflow-hidden relative w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center my-6">
+    <div className="overflow-hidden relative w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center mt-32">
       {/* Scrolling container */}
       <div className="image-slider flex  gap-12 animate-scroll">
         {/* Dynamically render the headings */}

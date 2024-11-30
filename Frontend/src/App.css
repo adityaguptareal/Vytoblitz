@@ -10,7 +10,7 @@
 
 .image-slider {
   display: flex;
-  animation: scroll 40s linear infinite; /* Smooth and continuous scrolling */
+  animation: scroll 60s linear infinite; /* Smooth and continuous scrolling */
 }
 
 @media (max-width: 768px) {

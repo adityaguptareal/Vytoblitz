@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="backdrop-blur-md sticky top-0 z-50 text-white font-Montserrat">
-      <div className="container mx-auto flex items-center justify-between px-4 py-5 md:px-8">
+      <div className="container mx-auto flex items-center justify-between px-4 py-[2px] md:px-8">
         {/* Logo */}
         <div className="text-3xl font-bold font-Orbitron">VytoBliz 1.0</div>
 
