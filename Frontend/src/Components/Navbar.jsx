@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="backdrop-blur-md sticky top-0 z-50 text-white font-Montserrat">
+    <nav className="backdrop-blur-md cursor-pointer sticky top-0 z-50 text-white font-Montserrat">
       <div className="container mx-auto flex items-center justify-between px-4 py-[2px] md:px-8">
         {/* Logo */}
         <div className="text-3xl font-bold font-Orbitron">VytoBltiz 1.0</div>
