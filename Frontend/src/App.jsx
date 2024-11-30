@@ -25,7 +25,7 @@ function App() {
           <div id="left" className="flex flex-col justify-center items-center gap-6 w-full lg:w-1/2">
             <div id="textContainer" className=" flex flex-col justify-center items-center lg:items-start gap-5 max-w-[420px] ">
               <h1 className="font-Orbitron text-4xl font-bold max-w-[500px] text-center xl:text-left lg:py-3 ">
-                VytoBliz 1.0: Where Innovation Meets Creativity!
+                VytoBliz 1.O: Where Innovation Meets Creativity!
               </h1>
               <div id="Venue" className=''>
                 <p className="font-Montserrat text-base flex sm:items-center lg:items-start gap-3">
@@ -38,7 +38,7 @@ function App() {
                 </p>
               </div>
               <p className="font-Montserrat text-base sm:text-center lg:text-left ">
-                Join VytoBliz 1.0  (28 November, 2024) for hackathons, quizzes, and more. Unleash your
+                Join VytoBliz 1.0  (28 November, 2024) for Hackathons, Quizzes, and more. Unleash your
                 creativity and tech skills!
               </p>
             </div>
