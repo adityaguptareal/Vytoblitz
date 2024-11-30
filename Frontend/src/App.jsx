@@ -9,12 +9,13 @@ import { FaLocationDot } from "react-icons/fa6";
 import Images from './AssetsExport'
 import Stats from './Components/Stats'
 import CardSlider from './Components/ImageSlider'
+import Footer from './Components/Footer'
 import EventCard from './Components/EventCard'
 
 function App() {
   return (
     <>
-      <div className="bg-black text-white w-full" id="MainScreen">
+      <div className="bg-gray-950 text-white w-full" id="MainScreen">
         <Navbar />
         {/* Hero Section */}
         <div
@@ -89,6 +90,7 @@ function App() {
 {/* Cultural */}
           <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
         </div>
+      <Footer></Footer>
       </div>
     </>
   );
