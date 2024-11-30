@@ -11,6 +11,8 @@ import Stats from './Components/Stats'
 import CardSlider from './Components/ImageSlider'
 import Footer from './Components/Footer'
 import EventCard from './Components/EventCard'
+import { QuadGallery } from './Components/QuadGallery'
+import SingleGallery from './Components/SingleGallery'
 
 function App() {
   return (
@@ -35,7 +37,7 @@ function App() {
                 </p>
                 <p className="font-Montserrat text-base flex sm:items-center lg:items-start gap-3">
                   <FaLocationDot />
-                  ITS Engineering College
+                  ITS Engineering College, Greator Noida
                 </p>
               </div>
               <p className="font-Montserrat text-base sm:text-center lg:text-left ">
@@ -61,7 +63,7 @@ function App() {
 
         </div>
         {/* What is VytoBlitz */}
-        <div id='VytoBlitz' className='flex flex-col items-center lg:flex-row justify-around my-14'>
+        <div id='VytoBlitz' className='flex flex-col items-center lg:flex-row justify-around my-14 w-10/12 mx-auto'>
           <div id='left' className=''>
             <img src={Images.CollegeAuditoriam} className='w-[500px] xl-[500px] rounded-3xl' alt="VytoFlow Group Image" />
           </div>
@@ -69,28 +71,37 @@ function App() {
             <h1 className='font-Orbitron font-extrabold text-4xl text-center my-8'
             >What is VytoBlitz ?</h1>
             <p className='font-Montserrat text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the  fest of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
-            <br />
-             Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
+              <br />
+              Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
           </div>
         </div>
         {/* Explore Our Events */}
         <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center '>
-          <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 '>Explore Our Events</h1>
-          <EventCard src={Images.Quizathon} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
+          <EventCard src={Images.Quizathon} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
           {/*  */}
-          <EventCard src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          <EventCard src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
-{/* Elite Combat */}
-          <EventCard src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          {/* Elite Combat */}
+          <EventCard src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
           {/* VytoHackClash */}
-          <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
-{/* Cultural */}
-          <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"}/>
+          {/* Cultural */}
+          <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
         </div>
-      <Footer></Footer>
+        <div>
+          {/* Event Gallery */}
+          <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
+            <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</h1>
+            <SingleGallery src={Images.VytFlowTeam}/>
+            <QuadGallery />
+          </div>
+        </div>
+        <div className='font-Orbitron text-5xl text-center my-48'>More Coming Soon !</div>
+        <Footer></Footer>
       </div>
     </>
   );
