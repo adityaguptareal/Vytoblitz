@@ -21,10 +21,10 @@ function Footer() {
         <div className='bg-black border-t-1 font-Montserrat border-white w-full flex flex-col mt-14 py-12 gap-3 items-center justify-center'>
             <h1 className='font-Montserrat font-bold text-2xl text-center'>Follow us on</h1>
             <div id='socialMedia' className='flex gap-3 flex-wrap items-center justify-center cursor-pointer'>
-              <a href="https://www.instagram.com/vytoflow_tech/">
+              <a href="https://www.linkedin.com/company/vytoflow-tech/">
                 <TiSocialLinkedinCircular className='text-5xl' />
               </a>
-            <a href="https://www.linkedin.com/company/vytoflow-tech/">
+            <a href="https://www.instagram.com/vytoflow_tech/">
             <FaInstagram className='text-4xl' />
             </a>
             <a href="https://wa.me/+918700745848">
