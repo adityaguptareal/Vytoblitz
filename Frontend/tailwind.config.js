@@ -10,6 +10,11 @@ export default {
         "Roboto":["roboto"],
         "Orbitron":["Orbitron"],
         "Montserrat":["Montserrat"]
+      },
+      screens:{
+        MobileL:"425px",
+        MobileM:"375px",
+        MobileS:"320px"
       }
     },
   },
