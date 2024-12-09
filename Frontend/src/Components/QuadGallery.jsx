@@ -24,7 +24,7 @@ export function QuadGallery({}) {
         {data.map(({ imageLink }, index) => (
           <div key={index} className="max-w-fit">
             <img
-              className="h-48  md:max-w-[360px] rounded-lg object-cover object-center md:h-60"
+              className="h-48 m md:max-w-[360px] rounded-lg object-cover object-center md:h-60"
               src={imageLink}
               alt=""
             />
