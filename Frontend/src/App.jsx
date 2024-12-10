@@ -13,6 +13,7 @@ import Footer from './Components/Footer'
 import EventCard from './Components/EventCard'
 import { QuadGallery } from './Components/QuadGallery'
 import SingleGallery from './Components/SingleGallery'
+import TeamMemberCard from './Components/TeamMemberCard'
 
 function App() {
   return (
@@ -96,9 +97,14 @@ function App() {
           {/* Event Gallery */}
           <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
             <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</h1>
-            <SingleGallery src={Images.VytFlowTeam}/>
+            <SingleGallery src={Images.VytFlowTeam} />
             <QuadGallery />
           </div>
+        </div>
+        {/* Team Section */}
+        <div id="teamSection" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
+          <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Our Team</h1>
+          <TeamMemberCard></TeamMemberCard>
         </div>
         <div className='font-Orbitron text-5xl text-center my-48'>More Coming Soon !</div>
         <Footer></Footer>
