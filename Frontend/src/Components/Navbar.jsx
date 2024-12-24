@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,30 +36,34 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } lg:flex flex-col lg:flex-row lg:items-center lg:gap-1 absolute lg:relative top-16 lg:top-0 left-0 w-full lg:w-auto 
+          className={`${isOpen ? "block" : "hidden"
+            } lg:flex flex-col lg:flex-row lg:items-center lg:gap-1 absolute lg:relative top-16 lg:top-0 left-0 w-full lg:w-auto 
             p-4 bg-black lg:bg-transparent sm:h-screen lg:h-auto z-40`}
         >
-          <a href="#home" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
+          <Link to="/" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
             Home
-          </a>
-          <a href="#events" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
-            Participant
-          </a>
-          <a
-            href="#coordinators"
+          </Link>
+          <Link to="/about" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
+            About
+          </Link>
+          <Link to="/event" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
+            Event
+          </Link>
+          <Link
+            to="/contact"
             className="block py-2 px-4 hover:scale-[1.2] transition-transform"
           >
-            Coordinators
-          </a>
-          <a href="#volunteers" className="block py-2 px-4 hover:scale-[1.2] transition-transform">
-            Volunteers
-          </a>
-          <div className="flex gap-3 py-2">
-            {/* <Button text="Signup" /> */}
-            <Button text="Login" />
+            Contact
+          </Link>
+          <div id="buttons" className="flex flex-col md:flex-row gap-3">
+            <Link to="/login">
+            <Button text="Login" rounded="full" />
+            </Link>
+            <Link to="/registration">
+            <Button text="Register" rounded="full" />
+            </Link>
           </div>
+
         </div>
       </div>
     </nav>
