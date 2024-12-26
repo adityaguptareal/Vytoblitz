@@ -33,7 +33,7 @@ function Registration() {
         <div id="form" className="flex justify-center items-center h-full">
           <div className="relative flex flex-col rounded-xl bg-white p-10">
             <h4 className="block text-xl font-medium text-slate-800">
-              Sign Up
+              Join the Waitlist
             </h4>
             <p className="text-slate-700 font-light">
               Nice to meet you! Register for Waitlist.
@@ -119,7 +119,7 @@ function Registration() {
                   background: "linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)",
                 }}
                 >
-                Sign Up
+Join Waitlist
               </button>
                 <ToastContainer/>
               <p className="flex justify-center mt-6 text-sm text-slate-700">
