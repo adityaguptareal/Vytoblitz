@@ -12,6 +12,68 @@ import { QuadGallery } from '../Components/QuadGallery'
 import SingleGallery from '../Components/SingleGallery'
 import TeamMemberCard from '../Components/TeamMemberCard'
 function Home() {
+  const teamMember = [
+    {
+      name: "Aditya",
+      img: Images.Aditya,
+    },
+    {
+      name: "AdityaSingh",
+      img: Images.AdityaSingh,
+    },
+    {
+      name: "Anshika",
+      img: Images.Anshika,
+    },
+    {
+      name: "Dhiya",
+      img: Images.Dhiya,
+    },
+    {
+      name: "Garvit",
+      img: Images.Garvit,
+    },
+    {
+      name: "Harsh",
+      img: Images.Harsh,
+    },
+    {
+      name: "Ishika",
+      img: Images.Ishika,
+    },
+    {
+      name: "Lavi",
+      img: Images.Lavi,
+    },
+    {
+      name: "Rahul",
+      img: Images.Rahul,
+    },
+    {
+      name: "Ritik",
+      img: Images.Ritik,
+    },
+    {
+      name: "Shubham",
+      img: Images.Shubham,
+    },
+    {
+      name: "Swati",
+      img: Images.Swati,
+    },
+    {
+      name: "Vaibhav",
+      img: Images.Vaibhav,
+    },
+    {
+      name: "Vanshika",
+      img: Images.Vanshika,
+    },
+    {
+      name: "Vishal",
+      img: Images.Vishal,
+    }
+  ]
   return (
     <>
       <div className="bg-gray-950 text-white w-full" id="MainScreen">
@@ -98,10 +160,26 @@ function Home() {
           </div>
         </div>
         {/* Team Section */}
-        <div id="teamSection" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
-          <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Our Team</h1>
-          <TeamMemberCard></TeamMemberCard>
+
+        <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</h1>
+        <div className="overflow-hidden relative w-full h-[300px] flex items-center mt-10">
+          <div className="team-image-slider flex  gap-12 animate-scroll">
+
+            {teamMember.map((member, index) => {
+              return (
+                <TeamMemberCard key={index} name={member.name} img={member.img} />
+              )
+            }
+            )}
+            {teamMember.map((member, index) => {
+              return (
+                <TeamMemberCard key={`duplicate-${index}`} name={member.name} img={member.img} />
+              )
+            }
+            )}
+          </div>
         </div>
+
         <div className='font-Orbitron text-5xl text-center my-48'>More Coming Soon !</div>
         <Footer></Footer>
       </div>
