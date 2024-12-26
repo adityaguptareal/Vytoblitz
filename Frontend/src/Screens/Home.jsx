@@ -177,6 +177,12 @@ function Home() {
               )
             }
             )}
+            {teamMember.map((member, index) => {
+              return (
+                <TeamMemberCard key={`duplicate2-${index}`} name={member.name} img={member.img} />
+              )
+            }
+            )}
           </div>
         </div>
 
