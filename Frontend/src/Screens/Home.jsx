@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "motion/react"
 import Navbar from '../Components/Navbar'
 import { BsFillCalendar2DateFill } from "react-icons/bs";
 import Button from '../Components/Button'
@@ -186,7 +187,8 @@ function Home() {
           </div>
         </div>
 
-        <div className='font-Orbitron text-5xl text-center my-48'>More Coming Soon !</div>
+        <motion.div whileInView={{ y: 10, opacity: "100%", 
+          transition: { duration: 1, delay: 2 } }} initial={{ y: 100, opacity: "0%" }} viewport={{ once: true }} className='font-Orbitron  text-6xl text-center my-48'>See You Soon !</motion.div>
         <Footer></Footer>
       </div>
     </>

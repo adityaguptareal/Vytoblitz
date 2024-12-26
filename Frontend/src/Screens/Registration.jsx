@@ -15,10 +15,10 @@ function Registration() {
     setLoading(true)
     const userData = await createUserWithEmailAndPassword(auth, data.email, data.password).then(() => {
       reset()
-      toast.success("User Registered Successfully")
+      toast.success("Successfully Added")
     }).catch((error) => {
       reset()
-      toast.error(error.message)
+      toast.error("Something went wrong")
       toast.error(error.code)
     })
 
