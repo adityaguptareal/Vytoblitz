@@ -18,7 +18,8 @@ function Registration() {
       toast.success("User Registered Successfully")
     }).catch((error) => {
       reset()
-      toast.error(error)
+      toast.error(error.message)
+      toast.error(error.code)
     })
 
 
