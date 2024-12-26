@@ -12,6 +12,10 @@
   display: flex;
   animation: scroll 60s linear infinite; /* Smooth and continuous scrolling */
 }
+.team-image-slider {
+  display: flex;
+  animation: scroll 130s linear infinite; /* Smooth and continuous scrolling */
+}
 
 @media (max-width: 768px) {
   .image-slider h1 {
