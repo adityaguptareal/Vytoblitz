@@ -19,7 +19,7 @@ function Footer() {
 
     return (
 <>
-<div className='flex justify-around items-start px-10 py-10 text-white'>
+<div className='flex justify-around items-start px-10 py-10 text-white '>
 {/* Logo Section */}
 
 <div id='logo' className='w-1/4 flex font-Montserrat gap-3 flex-col'>
@@ -31,21 +31,21 @@ function Footer() {
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Quick Link</span>
     <ul className='pt-4'>
-        <li className='text-sm'>Event</li>
-        <li className='text-sm'>About</li>
-        <li className='text-sm'>Contact</li>
-        <li className='text-sm'>Registraion</li>
-        <li className='text-sm'>FAQ</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Event</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>About</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Contact</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Registraion</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>FAQ</li>
     </ul>
 </div>
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Resources</span>
     <ul className='pt-4'>
-        <li className='text-sm'>Blog</li>
-        <li className='text-sm'>Support</li>
-        <li className='text-sm'>Team</li>
-        <li className='text-sm'>Events</li>
-        <li className='text-sm'>Workshop</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Blog</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Support</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Team</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Events</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Workshop</li>
     </ul>
 </div>
 
@@ -53,10 +53,10 @@ function Footer() {
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Follow us</span>
     <ul className='pt-4'>
-        <li className='text-sm'>Linkedin</li>
-        <li className='text-sm'>Instagram</li>
-        <li className='text-sm'>Whatsapp</li>
-        <li className='text-sm'>Email</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Linkedin</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Instagram</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Whatsapp</li>
+        <li className='text-sm cursor-pointer hover:text-purple-500'>Email</li>
     </ul>
 </div>
 
