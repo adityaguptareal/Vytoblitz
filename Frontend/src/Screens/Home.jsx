@@ -77,12 +77,14 @@ function Home() {
   ]
   return (
     <>
-      <div className="bg-gray-950 text-white w-full" id="MainScreen">
-        <Navbar />
+    
+      <div className="bg-gray-950 relative text-white w-full" id="MainScreen">
+        <div class="absolute top-0 z-[2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+              <Navbar />
         {/* Hero Section */}
         <div
           id="heroSection"
-          className="flex flex-col gap-12 lg:flex-row justify-around items-center w-full h-full px-5 lg:px-20 pt-10"
+          className="flex relative z-20 flex-col gap-12 lg:flex-row justify-around items-center w-full h-full px-5 lg:px-20 pt-10"
         >
           {/* Left Section */}
           <div id="left" className="flex flex-col justify-center items-center gap-6 w-full lg:w-1/2">
