@@ -163,7 +163,7 @@ function Home() {
         {/* Team Section */}
 
         <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</h1>
-        <div className="overflow-hidden relative w-full h-[300px] flex items-center mt-10">
+        <div className="overflow-hidden scrollGradient relative w-full h-[300px] flex items-center mt-10">
           <div className="team-image-slider flex  gap-12 animate-scroll">
 
             {teamMember.map((member, index) => {
@@ -186,9 +186,14 @@ function Home() {
             )}
           </div>
         </div>
+        <div className=' container mx-auto my-20 w-full flex justify-center items-center overflow-x-hidden'>
 
-        <motion.div whileInView={{ y: 10, opacity: "100%", 
-          transition: { duration: 1, delay: 2 } }} initial={{ y: 100, opacity: "0%" }} viewport={{ once: true }} className='font-Orbitron  text-6xl text-center my-48'>See You Soon !</motion.div>
+        
+        </div>
+        <motion.div whileInView={{
+          y: 10, opacity: "100%",
+          transition: { duration: 1, delay: 2 }
+        }} initial={{ y: 100, opacity: "0%" }} viewport={{ once: true }} className='font-Orbitron  text-6xl text-center my-48'>See You Soon !</motion.div>
         <Footer></Footer>
       </div>
     </>
