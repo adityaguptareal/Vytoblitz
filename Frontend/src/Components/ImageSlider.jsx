@@ -16,7 +16,7 @@ const ImageSlider = () => {
   ]; // Array of headings
 
   return (
-    <div className="overflow-hidden relative w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center mt-32">
+    <div className="overflow-hidden scrollGradient relative w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center mt-32">
       {/* Scrolling container */}
       <div className="image-slider flex  gap-12 animate-scroll">
         {/* Dynamically render the headings */}
@@ -30,6 +30,22 @@ const ImageSlider = () => {
         ))}
 
         {/* Duplicate the headings for continuous scrolling */}
+        {headings.map((heading, index) => (
+          <h1
+            key={`duplicate-${index}`}
+            className="text-white font-Orbitron font-bold text-2xl whitespace-nowrap"
+          >
+            {heading}
+          </h1>
+        ))}
+        {headings.map((heading, index) => (
+          <h1
+            key={`duplicate-${index}`}
+            className="text-white font-Orbitron font-bold text-2xl whitespace-nowrap"
+          >
+            {heading}
+          </h1>
+        ))}
         {headings.map((heading, index) => (
           <h1
             key={`duplicate-${index}`}
