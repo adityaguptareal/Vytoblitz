@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import { motion } from "motion/react"
 import Navbar from '../Components/Navbar'
 import { BsFillCalendar2DateFill } from "react-icons/bs";
@@ -12,7 +12,15 @@ import EventCard from '../Components/EventCard'
 import { QuadGallery } from '../Components/QuadGallery'
 import SingleGallery from '../Components/SingleGallery'
 import TeamMemberCard from '../Components/TeamMemberCard'
+import EventCta from '../Components/EventCta';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
 function Home() {
+  const [loading, setloading] = useState(true)
+  function handleLoading() {
+    setloading(false)
+    console.log("loading is", loading)
+  }
   const teamMember = [
     {
       name: "Aditya",
@@ -75,12 +83,21 @@ function Home() {
       img: Images.Vishal,
     }
   ]
+  const imageSrc = "https://plus.unsplash.com/premium_photo-1677094766815-e0fe790e364a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW55fGVufDB8fDB8fHww"
+
+  useEffect(() => {
+    const loadTimer = setTimeout(() => {
+      setloading(false)
+    }, 3000)
+
+    return () => clearTimeout(loadTimer)
+  }, [])
   return (
     <>
-    
+
       <div className="bg-gray-950 relative text-white w-full" id="MainScreen">
-        <div class="absolute top-0 z-[2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-              <Navbar />
+        <div className="absolute top-0 z-[2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+        <Navbar />
         {/* Hero Section */}
         <div
           id="heroSection"
@@ -108,15 +125,25 @@ function Home() {
               </p>
             </div>
             <div className="my-4 flex gap-6">
-              <Button text="Join WaitList !" rounded="full" />
+              <Button navigate="/registration" text="Join WaitList !"/>
               <Button text="Explore Event" rounded="full" />
             </div>
             <Stats />
           </div>
 
           {/* Right Section */}
-          <div id="right" className=" w-full lg:w-1/2 flex justify-center">
-            <img src={Images.VytoflowGroup} className="w-[350px] lg:w-[550px] xl:w-[700px] rounded-2xl" alt="Hero Image" />
+          <div id="right" className="w-full lg:w-1/2 flex justify-center">
+            {loading ? (
+              <SkeletonTheme baseColor="#202020" highlightColor="#444">
+                <Skeleton style={{ width: "550px", height: "550px", borderRadius: "10px" }} />
+              </SkeletonTheme>
+            ) : (
+              <img
+                src={Images.VytoflowGroup}  // Replace with Images.VytoflowGroup
+                className="w-[350px] lg:w-[550px] xl:w-[700px] rounded-2xl"
+                alt="VytoFLow Group Image"
+              />
+            )}
           </div>
         </div>
         <div>
@@ -127,79 +154,88 @@ function Home() {
         {/* What is VytoBlitz */}
         <div id='VytoBlitz' className='flex flex-col items-center lg:flex-row justify-around my-14 w-10/12 mx-auto'>
           <div id='left' className=''>
-            <img src={Images.CollegeAuditoriam} className='w-[500px] xl-[500px] rounded-3xl' alt="VytoFlow Group Image" />
-          </div>
-          <div id='right' className='lg:w-2/6 md:w-4/6 w-full flex flex-col items-center justify-center'>
-            <h1 className='font-Orbitron font-extrabold text-4xl text-center my-8'
-            >What is VytoBlitz ?</h1>
-            <p className='font-Montserrat text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the  fest of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
-              <br />
-              Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
-          </div>
-        </div>
-        {/* Explore Our Events */}
-        <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center '>
-          <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
-          <EventCard src={Images.Quizathon} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
-
-          {/*  */}
-          <EventCard src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
-
-          {/* Elite Combat */}
-          <EventCard src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
-
-          {/* VytoHackClash */}
-          <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
-
-          {/* Cultural */}
-          <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
-        </div>
-        <div>
-          {/* Event Gallery */}
-          <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
-            <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</h1>
-            <SingleGallery src={Images.VytFlowTeam} />
-            <QuadGallery />
-          </div>
-        </div>
-        {/* Team Section */}
-
-        <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</h1>
-        <div className="overflow-hidden scrollGradient relative w-full h-[300px] flex items-center mt-10">
-          <div className="team-image-slider flex  gap-12 animate-scroll">
-
-            {teamMember.map((member, index) => {
-              return (
-                <TeamMemberCard key={index} name={member.name} img={member.img} />
-              )
-            }
+            {loading ? (
+              <SkeletonTheme baseColor="#202020" highlightColor="#444">
+                <Skeleton style={{ width: "500px", height: "280px", borderRadius: "10px" }} />
+              </SkeletonTheme>
+            ) : (
+              <img src={Images.CollegeAuditoriam} className='w-[500px] xl-[500px] rounded-3xl' alt="VytoFlow Group Image" />
             )}
-            {teamMember.map((member, index) => {
-              return (
-                <TeamMemberCard key={`duplicate-${index}`} name={member.name} img={member.img} />
-              )
-            }
-            )}
-            {teamMember.map((member, index) => {
-              return (
-                <TeamMemberCard key={`duplicate2-${index}`} name={member.name} img={member.img} />
-              )
-            }
-            )}
+             
+            </div>
+            <div id='right' className='lg:w-2/6 md:w-4/6 w-full flex flex-col items-center justify-center'>
+              <h1 className='font-Orbitron font-extrabold text-4xl text-center my-8'
+              >What is VytoBlitz ?</h1>
+              <p className='font-Montserrat text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the  fest of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
+                <br />
+                Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
+            </div>
           </div>
-        </div>
-        <div className=' container mx-auto my-20 w-full flex justify-center items-center overflow-x-hidden'>
+          {/* Explore Our Events */}
+          <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center '>
+            <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
+            <EventCard src={Images.Quizathon} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
-        
+            {/*  */}
+            <EventCard src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+
+            {/* Elite Combat */}
+            <EventCard src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+
+            {/* VytoHackClash */}
+            <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+
+            {/* Cultural */}
+            <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+          </div>
+          <div>
+            {/* Event Gallery */}
+            <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
+              <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</h1>
+              <SingleGallery src={Images.VytFlowTeam} />
+              <QuadGallery />
+            </div>
+          </div>
+          {/* Team Section */}
+
+          <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</h1>
+          <div className="overflow-hidden scrollGradient relative w-full h-[300px] flex items-center mt-10">
+            <div className="team-image-slider flex  gap-12 animate-scroll">
+
+              {teamMember.map((member, index) => {
+                return (
+                  <TeamMemberCard key={index} name={member.name} img={member.img} />
+                )
+              }
+              )}
+              {teamMember.map((member, index) => {
+                return (
+                  <TeamMemberCard key={`duplicate-${index}`} name={member.name} img={member.img} />
+                )
+              }
+              )}
+              {teamMember.map((member, index) => {
+                return (
+                  <TeamMemberCard key={`duplicate2-${index}`} name={member.name} img={member.img} />
+                )
+              }
+              )}
+            </div>
+          </div>
+          <div className=' container mx-auto my-20 w-full flex justify-center items-center overflow-x-hidden'>
+
+
+          </div>
+          <EventCta heading="Join the Tech Revolution Today" description="Secure your spot at the most exciting tech fest of the year—register now!" primaryBtn="Register" secondaryBtn="Learn More" primaryBtnLink="/registration" secondaryBtnLink="/event" />
+          <motion.div whileInView={{
+            y: 10, opacity: "100%",
+            transition: { duration: 1, delay: 1 }
+          }} initial={{ y: 100, opacity: "0%" }} className='font-Orbitron  text-6xl text-center my-48'>See You In The Event !</motion.div>
+          <Footer></Footer>
         </div>
-        <motion.div whileInView={{
-          y: 10, opacity: "100%",
-          transition: { duration: 1, delay: 1 }
-        }} initial={{ y: 100, opacity: "0%" }} className='font-Orbitron  text-6xl text-center my-48'>See You Soon !</motion.div>
-        <Footer></Footer>
-      </div>
-    </>
-  )
+
+      </>
+      )
 }
 
-export default Home
+      export default Home

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function Error() {
     return (
@@ -11,6 +12,7 @@ function Error() {
                     <div className='text-3xl text-white font-Orbitron text-center'>Resource Not Found !</div>
                     Test
                 </div>
+                <Footer/>
             </div>
         </>
     )

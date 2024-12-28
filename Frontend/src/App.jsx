@@ -5,12 +5,12 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './Screens/Home';
 import Contact from './Screens/Contact';
-import Login from './Screens/Login';
 import Navbar from './Components/Navbar';
 import Event from './Screens/Event';
 import About from './Screens/About'
 import Registration from './Screens/Registration'
 import Error from './Screens/Error'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/registration' element={<Registration />} />
-          <Route path='/login' element={<Login/>} />
           <Route path='*' element={<Error/>} />
         </Routes>
       </BrowserRouter>

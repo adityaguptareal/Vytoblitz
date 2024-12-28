@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import { Link } from 'react-router-dom';
+import {useNavigate} from "react-router-dom"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate()
   return (
     <nav className="backdrop-blur-md cursor-pointer sticky top-0 z-50 text-white font-Montserrat">
       <div className="container mx-auto flex items-center justify-between px-4 py-[2px] md:px-8">
         {/* Logo */}
-        <div className="text-3xl font-bold font-Orbitron">VytoBltiz 1.0</div>
+        <div className="text-3xl font-bold font-Orbitron" onClick={()=>navigate('/')}>VytoBltiz 1.0</div>
 
         {/* Menu Icon for Mobile */}
         <div className="lg:hidden">

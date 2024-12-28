@@ -19,7 +19,9 @@ function Footer() {
 
     return (
 <>
-<div className='flex justify-around items-start px-10 py-10 text-white '>
+<div>
+
+<div className='flex justify-around bg-slate-950 items-start px-10 py-10 text-white '>
 {/* Logo Section */}
 
 <div id='logo' className='w-1/4 flex font-Montserrat gap-3 flex-col'>
@@ -77,6 +79,7 @@ function Footer() {
             <li className='hover:scale-[1.2] transition-all ease-linear cursor-pointer'><FaWhatsapp /></li>
         </ul>
     </div>
+</div>
 </div>
 </>
         
