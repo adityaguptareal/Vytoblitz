@@ -3,7 +3,6 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { useForm } from 'react-hook-form'
 import EventCta from '../Components/EventCta'
-import InstagramEmbed from '../Components/video1'
 function Event() {
   return (
     <>
@@ -29,20 +28,20 @@ function Event() {
             <div id="eventRight" className='flex flex-col gap-5 items-center justify-center'>
               <h1 className='text-3xl text-center font-bold font-Montserrat'>Thu, Nov 28</h1>
               <div id="timeDuration" className='flex justify-center items-center gap-5 border text-white border-white font-Montserrat p-3 divide-x-2'>
-                <div id='day' className='pl-5'>
-                  <div className='text-4xl'>10</div>
+                <div id='day' className='pl-5 text-center '>
+                  <div className='text-4xl'>0</div>
                   <div className='text-sm'>Days</div>
                 </div>
-                <div id='hour' className='pl-5'>
-                  <div className='text-4xl'>10</div>
+                <div id='hour' className='pl-5 text-center'>
+                  <div className='text-4xl'>0</div>
                   <div className='text-sm'>Hours</div>
                 </div>
-                <div id='minute' className='pl-5'>
-                  <div className='text-4xl'>10</div>
+                <div id='minute' className='pl-5 text-center'>
+                  <div className='text-4xl'>0</div>
                   <div className='text-sm'>Mins</div>
                 </div>
-                <div id='second' className='pl-5 pr-5'>
-                  <div className='text-4xl'>10</div>
+                <div id='second' className='pl-5 text-center pr-5'>
+                  <div className='text-4xl'>0</div>
                   <div className='text-sm'>Secs</div>
                 </div>
               </div>
@@ -61,12 +60,42 @@ function Event() {
               <h1 className='text-center text-4xl font-bold underline'>Event Highlight</h1>
               <p className='text-center py-3 font-Montserrat'>Explore captivating moments from our past tech fests!</p>
             </div>
-            <div id="videoSection" className='grid grid-cols-2 gap-x-4 gap-y-12 justify-items-center items-center px-14 content-center h-full'>
-              <div id="video1" className='w-[640px] h-[360px] bg-white'></div>
-              <div id="video2" className='w-[640px] h-[360px] bg-white'></div>
-              <div id="video2" className='w-[640px] h-[360px] bg-white'></div>
-              <div id="video2" className='w-[640px] h-[360px] bg-white'></div>
-              <div id="video2" className='w-[640px] h-[360px] bg-white'></div>
+
+            {/* Video Section */}
+            <div id="videoSection" className=''>
+              <div id="horizontalVideo" className='grid gap-y-16 grid-cols-2 items-center justify-items-center'>
+
+                <div id="AlogoQuiz" className='w-[640px] h-[360px] relative'>
+                  <iframe src="https://player.vimeo.com/video/1042595529?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", }} title="Vytoblitz Quizathon"></iframe>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+
+                <div id="ArtistryArena" className='w-[640px] h-[360px] relative'>
+                  <iframe src="https://player.vimeo.com/video/1042596330?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", }} title="Vytoblitz Quizathon"></iframe>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+
+                <div id="Esports" className='w-[640px] h-[360px] relative'>
+                  <iframe src="https://player.vimeo.com/video/1042594635?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", }} title="Vytoblitz Quizathon"></iframe>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+
+
+                <div id="SpecialGuest" className='w-[640px] h-[360px] relative'>
+                  <iframe src="https://player.vimeo.com/video/1042596920?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", }} title="Vytoblitz Quizathon"></iframe>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+
+
+
+
+
+
+              </div>
+
+
+
+
             </div>
           </div>
         </div>
