@@ -178,6 +178,18 @@ function Event() {
               </div>
               {/* Event Highlight Closed */}
 
+
+{/* Individual Event Section */}
+<section id="Event">
+
+
+</section>
+
+
+
+
+{/* Individual Event Section Closed */}
+
               {/* FeedBack Section */}
               <section id='feedback'>
                 <div className='flex justify-center flex-col py-20 gap-2 items-center'>
@@ -231,15 +243,15 @@ function Event() {
                 </div>
               </section>
               {/* Faq Section Closed */}
-{/* Contact CTA  */}
+              {/* Contact CTA  */}
 
-<div id='contactCta' className='flex font-Montserrat flex-col gap-3 justify-center items-center'>
-<h1 className='text-3xl text-center font-Orbitron font-bold text-white'>Still Have Questions ?</h1>
-<p className='text-base text-center text-white'>Reach out to us anytime!</p>
-<button  className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
-</div>
+              <div id='contactCta' className='flex font-Montserrat flex-col gap-3 justify-center items-center'>
+                <h1 className='text-3xl text-center font-Orbitron font-bold text-white'>Still Have Questions ?</h1>
+                <p className='text-base text-center text-white'>Reach out to us anytime!</p>
+                <button className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
+              </div>
 
-{/* Contact CTA Closed */}
+              {/* Contact CTA Closed */}
 
             </div>
           </div>
