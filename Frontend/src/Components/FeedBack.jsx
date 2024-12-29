@@ -41,23 +41,27 @@ function FeedBack() {
 
     ]
     return (
-        
-            feedBackData.map((data, index) => {
-                return (
-                    <div id='container' key={index} className='p-4 border w-72  border-white'>
-                        <div className='text-xl'>{data.rating}</div>
-                        <div className='text-base'>{data.feedback}</div>
-                        <div id='userDetails' className='flex items-center py-2 gap-2'>
-                            <div className='w-[50px] h-[50px] bg-white rounded-full' ></div>
-                            <div id="userName">
-                                <div className='text-base font-medium'>{data.username}</div>
-                                <div className='text-base font-thin'>{data.position}</div>
-                            </div>
+
+
+
+
+        feedBackData.map((data, index) => {
+            return (
+                <div id='container' key={index} className='p-4 border w-72  border-white'>
+                    <div className='text-xl'>{data.rating}</div>
+                    <div className='text-base'>{data.feedback}</div>
+                    <div id='userDetails' className='flex items-center py-2 gap-2'>
+                        <div className='w-[50px] h-[50px] bg-white rounded-full' ></div>
+                        <div id="userName">
+                            <div className='text-base font-medium'>{data.username}</div>
+                            <div className='text-base font-thin'>{data.position}</div>
                         </div>
                     </div>
-                )
-            })
-        
+                </div>
+            )
+        })
+
+
     )
 }
 
