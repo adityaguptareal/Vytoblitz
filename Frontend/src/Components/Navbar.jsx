@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate()
   return (
     <nav className="backdrop-blur-md cursor-pointer sticky top-0 z-50 text-white font-Montserrat">
-      <div className="container mx-auto flex items-center justify-between px-4 py-[2px] md:px-8">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-8">
         {/* Logo */}
         <div className="text-3xl font-bold font-Orbitron" onClick={()=>navigate('/')}>VytoBltiz 1.0</div>
 
