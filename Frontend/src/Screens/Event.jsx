@@ -32,12 +32,12 @@ function Event() {
           <div className="absolute bottom-0 z-[2] left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           <Navbar />
           <div className='relative z-10'>
-            <div className='pt-10 pb-40'>
+            <div className='pt-10 pb-40 '>
               {/* Event Hero Section */}
-              <div className='px-40 h-[300px] py-10 font-Montserrat text-white flex items-center justify-around flex-col gap-5 flex-wrap'>
-                <div id='eventLeft' className='w-[36%] flex items-start justify-center flex-col gap-5'>
-                  <h1 className='text-4xl font-Orbitron font-bold'>VytoBlitz 1.0 2024</h1>
-                  <p className='text-lg'>Join us for an exhilarating experience filled with innovation, technology, and creativity!</p>
+              <div className='xl:px-40 px-10 h-fit lg:h-[300px] py-10 font-Montserrat text-white flex items-center justify-around flex-col gap-5 '>
+                <div id='eventLeft' className=' w-9/12 lg:w-[36%] flex lg:items-start items-center justify-center flex-col gap-5'>
+                  <h1 className='xl:text-4xl  text-3xl font-Orbitron font-bold'>VytoBlitz 1.0 2024</h1>
+                  <p className='xl:text-lg text-base text-center'>Join us for an exhilarating experience filled with innovation, technology, and creativity!</p>
                   <div id='form' className='flex flex-col gap-4'>
                     <form className='flex gap-4'>
                       <input type='text' placeholder='Your Name' className='h-[45px] pl-3 border bg-transparent border-b border-white text-white focus:outline-none' />
@@ -76,7 +76,7 @@ function Event() {
               </div>
 
               {/* Event Schedule section */}
-              <div id="eventSchedule" className='pt-32 font-Montserrat'>
+              <div id="eventSchedule" className='lg:pt-32 pt-10 font-Montserrat'>
 
                 <div id="textContainer" className='flex items-center justify-center flex-col gap-2 text-white text-center font-Montserrat'>
                   <span className='text-base font-semibold'>Explore</span>

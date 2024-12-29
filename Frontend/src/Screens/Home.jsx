@@ -105,26 +105,26 @@ function Home() {
         >
           {/* Left Section */}
           <div id="left" className="flex flex-col justify-center items-center gap-6 w-full ">
-            <div id="textContainer" className=" flex flex-col justify-center items-center w-1/2 gap-5 text-center ">
+            <div id="textContainer" className=" flex flex-col justify-center items-center w-full md:w-1/2 gap-5 text-center ">
               <h1 className="font-Orbitron text-4xl font-bold  text-center  lg:py-3 ">
                 VytoBlitz 1.O: Where Innovation Meets Creativity!
               </h1>
-              <div id="Venue" className='flex flex-col justify-center items-center'>
-                <p className="font-Montserrat text-base flex justify-center items-center  gap-3">
+              <div id="Venue" className='flex flex-col justify-center items-start'>
+                <p className="font-Montserrat text-sm md:text-base flex justify-center items-start text-left md:text-center  gap-3">
                   <BsFillCalendar2DateFill />
                   Date: 28 November, 2024
                 </p>
-                <p className="font-Montserrat text-base flex justify-center items-center  gap-3">
+                <p className="font-Montserrat text-sm md:text-base flex justify-center items-start text-left md:text-center  gap-3">
                   <FaLocationDot />
                   ITS Engineering College, Greator Noida
                 </p>
               </div>
-              <p className="font-Montserrat text-base text-center  ">
+              <p className="font-Montserrat text-sm md:text-base text-center  ">
                 Join VytoBlitz 1.0  (28 November, 2024) for Hackathons, Quizzes, and more. Unleash your
                 creativity and tech skills!
               </p>
             </div>
-            <div className="my-4 flex gap-6">
+            <div className="my-4 flex MobileM:flex-row flex-col gap-6">
               <Button navigate="/registration" text="Join WaitList !" />
               <Button text="Explore Event" rounded="full" />
             </div>

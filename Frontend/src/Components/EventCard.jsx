@@ -7,7 +7,7 @@ import { FaClock } from "react-icons/fa6";
 function EventCard({ src, date, title, time, location, registerBtnText, informationText }) {
   return (
     <>
-      <div id='Event' className='flex flex-wrap flex-col lg:flex-row lg:gap-7 gap-14 items-start justify-center mt-4 lg:border-b-[1px] lg:border-white border-0 w-auto lg:w-[920px]'>
+      <div id='Event' className='flex flex-wrap flex-col lg:flex-row lg:gap-7 gap-14 items-center lg:items-start justify-center mt-4 lg:border-b-[1px] lg:border-white border-0 w-auto lg:w-[920px]'>
         <div id="date" className='font-Orbitron text-lg font-bold lg:max-w-[105px] max-w-fit'>{date}</div>
         <div id="eventImage">
           <img src={src} alt="" className=' max-w-[300px] lg:max-w-[150px]' />
