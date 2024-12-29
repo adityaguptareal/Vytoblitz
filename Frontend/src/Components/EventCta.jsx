@@ -7,8 +7,8 @@ function EventCta({ heading, description, primaryBtn, secondaryBtn, primaryBtnLi
         <div>
             <div  style={{
         background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
-      }} className='w-full h-[500px]  font-Montserrat text-white flex items-center justify-center flex-col gap-5 flex-wrap'>
-                <div className='max-w-[650px] flex items-center justify-center flex-col gap-5'>
+      }} className='w-full py-16  font-Montserrat text-white flex items-center justify-center flex-col gap-5 flex-wrap'>
+                <div className='md:max-w-[650px] max-w-[300px] flex items-center justify-center flex-col gap-5'>
 
                     <h1 className='text-4xl font-bold text-center '>{heading}</h1>
                     <p className='text-center'>{description}</p>
