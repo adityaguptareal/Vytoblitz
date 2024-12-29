@@ -21,18 +21,18 @@ function Footer() {
 <>
 <div>
 
-<div className='flex justify-around bg-slate-950 items-start px-10 py-10 text-white '>
+<div className='flex md:flex-row flex-col gap-y-3  justify-around bg-slate-950 items-start px-5 py-5 lg:px-10 lg:py-10 text-white '>
 {/* Logo Section */}
 
-<div id='logo' className='w-1/4 flex font-Montserrat gap-3 flex-col'>
-    <h1 className='font-Orbitron text-4xl font-bold'>VytoBlitz</h1>
-    <p >Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
+<div id='logo' className='md:w-1/4 w-[75%] flex font-Montserrat gap-3 flex-col'>
+    <h1 className='font-Orbitron  text-3xl lg:text-4xl  font-bold'>VytoBlitz</h1>
+    <p className='text-sm lg:text-base' >Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
 </div>
 
 {/* Quick link Section */}
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Quick Link</span>
-    <ul className='pt-4'>
+    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Event</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>About</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Contact</li>
@@ -42,7 +42,7 @@ function Footer() {
 </div>
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Resources</span>
-    <ul className='pt-4'>
+    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Blog</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Support</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Team</li>
@@ -54,7 +54,7 @@ function Footer() {
 {/* Social Media Section */}
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Follow us</span>
-    <ul className='pt-4'>
+    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Linkedin</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Instagram</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Whatsapp</li>
@@ -63,10 +63,10 @@ function Footer() {
 </div>
 
 </div>
-<div className="flex justify-between px-14 border-t-[0.7px] border-slate-700 items-center pb-13 bg-gray-950 text-white p-4 font-Montserrat text-sm">
-    <div id="footerLeft" className='flex gap-6 cursor-pointer'>
+<div className="flex flex-col md:flex-row justify-between gap-4 p-6 border-t-[0.7px] border-slate-700 md:items-center items-start pb-13 bg-gray-950 text-white  font-Montserrat lg:text-sm text-[12px]">
+    <div id="footerLeft" className='flex flex-col md:flex-row gap-6 cursor-pointer'>
         <span>© {year} VytoBlitz. All Right Reserved.</span>
-        <ul className='flex gap-4 underline'>
+        <ul className='flex flex-row  gap-2 underline '>
             <li>Privacy Policy</li>
             <li>Terms of Use</li>
             <li>Cookies Policy </li>
