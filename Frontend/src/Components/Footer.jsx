@@ -73,7 +73,7 @@ function Footer() {
         </ul>
     </div>
     <div id="footerRight">
-        <ul className='flex gap-2 text-[25px] '>
+        <ul className='flex gap-4 text-[25px] '>
             <li className='hover:scale-[1.2] transition-all ease-linear cursor-pointer'><FaLinkedin/></li>
             <li className='hover:scale-[1.2] transition-all ease-linear cursor-pointer'><FaInstagram/></li>
             <li className='hover:scale-[1.2] transition-all ease-linear cursor-pointer'><FaWhatsapp /></li>
