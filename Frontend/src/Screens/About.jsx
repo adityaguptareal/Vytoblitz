@@ -6,7 +6,7 @@ import Logo from "../assets/Logo.png"
 function About() {
   return (
 
-    <div className="bg-slate-950 font-Montserrat">
+    <div className="bg-slate-950 overflow-hidden  font-Montserrat">
       <Navbar/>
       {/* Hero */}
       <section className="relative py-20 ">
