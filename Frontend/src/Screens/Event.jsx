@@ -6,6 +6,7 @@ import EventCta from '../Components/EventCta'
 import EventSchedule from '../Components/EventSchedule'
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton"
 import { useEffect } from 'react'
+import FeedBack from '../Components/FeedBack'
 function Event() {
   const [loader, setloader] = useState(true)
   const [date, setDate] = useState('28 Nov');
@@ -226,6 +227,19 @@ function Event() {
 
               </div>
             </div>
+
+            {/* FeedBack Section */}
+            <section id='feedback'>
+              <div className='flex justify-center flex-col py-20 gap-2 items-center'>
+                <h1 className='font-Orbitron text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
+                <p className='font-Montserrat text-white text-base text-center '>An unforgettable experience filled with learning and fun!</p>
+              </div>
+              <div className='grid grid-cols-4 gap-x-0 gap-y-7 w-full px-20 py-4 justify-items-center font-Montserrat items-stretch'>
+                <FeedBack />
+              </div>
+
+            </section>
+
           </div>
         </SkeletonTheme>
       </div>
