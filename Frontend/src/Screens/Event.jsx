@@ -34,14 +34,14 @@ function Event() {
           <div className='relative z-10'>
             <div className='pt-10 pb-40'>
               {/* Event Hero Section */}
-              <div className='px-20 h-[300px] py-10 font-Montserrat text-white flex flex-col lg:flex-row items-center xl:justify-around lg:justify-between '>
+              <div className='px-10 md:px-20 h-[300px] py-10 font-Montserrat text-white flex flex-col lg:flex-row items-center xl:justify-around lg:justify-between '>
                 <div id='eventLeft' className='xl:w-[36%] py-6 lg:w-6/12 w-full flex items-center lg:items-start justify-center flex-col gap-5'>
-                  <h1 className='text-4xl font-Orbitron font-bold'>VytoBlitz 1.0 2024</h1>
+                  <h1 className='text-4xl font-Orbitron text-center md:text-left font-bold'>VytoBlitz 1.0 2024</h1>
                   <p className='text-lg lg:text-left text-center'>Join us for an exhilarating experience filled with innovation, technology, and creativity!</p>
-                  <div id='form' className='flex flex-col gap-4'>
-                    <form className='flex gap-4'>
-                      <input type='text' placeholder='Your Name' className='h-[45px] pl-3 border bg-transparent border-b border-white text-white focus:outline-none' />
-                      <input type='email' placeholder='Your Email' className='h-[45px] pl-3 border bg-transparent border-b border-white text-white focus:outline-none' />
+                  <div id='form' className='flex w-full flex-col gap-4'>
+                    <form className='flex flex-col  md:flex-row gap-4'>
+                      <input type='text' placeholder='Your Name' className='h-[45px] w-full pl-3 border bg-transparent border-b border-white text-white focus:outline-none' />
+                      <input type='email' placeholder='Your Email' className='h-[45px] w-full pl-3 border bg-transparent border-b border-white text-white focus:outline-none' />
                     </form>
                     <button className='px-2 MobileM:px-5 font-medium sm:px-6 py-2 text-white' style={{
                       background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
@@ -76,7 +76,7 @@ function Event() {
               </div>
 
               {/* Event Schedule section */}
-              <div id="eventSchedule" className=' font-Montserrat'>
+              <div id="eventSchedule" className=' md:pt-0 pt-32 font-Montserrat'>
 
                 <div id="textContainer" className='flex items-center justify-center flex-col gap-2 pt-80 lg:pt-14 text-white text-center font-Montserrat'>
                   <span className='text-base font-semibold'>Explore</span>
@@ -103,7 +103,7 @@ function Event() {
                 {/* Video Section */}
                 <div id="videoSection" className=''>
                   
-                  <div id="" className='flex gap-x-10 flex-col lg:flex-row flex-wrap px-16 py-10 gap-y-10 justify-center items-center'>
+                  <div id="" className='flex gap-x-10 flex-col lg:flex-row flex-wrap  px-0 md:px-16 py-10 gap-y-10 justify-center items-center'>
                     <div id="video1" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
@@ -191,11 +191,11 @@ function Event() {
 
               {/* FeedBack Section */}
               <section id='feedback'>
-                <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center'>
-                  <h1 className='font-Orbitron text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
+                <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center max-w-sm mx-auto'>
+                  <h1 className='font-Orbitron text-3xl md:text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
                   <p className='font-Montserrat text-white text-base text-center '>An unforgettable experience filled with learning and fun!</p>
                 </div>
-                <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 xl:gap-x-0 gap-y-7 w-full px-10 xl:px-20 py-4 justify-items-center font-Montserrat items-stretch'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 xl:gap-x-0 gap-y-7 w-full px-10 xl:px-20 py-4 justify-items-center font-Montserrat items-stretch'>
                   <FeedBack />
                 </div>
               </section>
@@ -205,7 +205,7 @@ function Event() {
               <div id='howToParticipate' className='font-Montserrat text-center justify-center items-center flex flex-col gap-3 py-20'>
                 <div className='flex flex-col justify-center items-center text-center w-3/4 lg:w-3/6 gap-4'>
                   <p className='text-base  text-center font-bold'>Join</p>
-                  <h1 className='text-4xl font-Orbitron underline text-center font-bold'>How to Participate in Our Tech Fest</h1>
+                  <h1 className='text-3xl md:text-4xl font-Orbitron underline text-center font-bold'>How to Participate in Our Tech Fest</h1>
                   <p className='text-base  text-center '>Participating in our tech fest is easy and exciting! Follow these simple steps to secure your spot and showcase your skills.</p>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-12 px-12 py-7 '>
@@ -236,7 +236,7 @@ function Event() {
 
               {/* Faq Section */}
               <section className='flex flex-col justify-center py-20  items-center'>
-                <h1 className=' text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
+                <h1 className=' text-3xl md:text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
                 <div className='w-[70%] xl:w-1/2 font-Montserrat'>
                   <AccordionCustomIcon />
                 </div>
