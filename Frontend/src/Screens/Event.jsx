@@ -130,6 +130,7 @@ function Event() {
               </div>
 
             </div>
+            {/* Event Schedule section Closed */}
 
 
             {/* Event Highlight */}
@@ -212,21 +213,10 @@ function Event() {
                       )
                     }
                   </div>
-
-
-
-
-
                 </div>
-                {/* Cta Section */}
-                <div className='pt-40'>
-                  <EventCta heading='Join Us for the Ultimate Tech Experience!' description='Get ready to explore technology and innovative ideas at our annual tech fest. Mark your calendars for an unforgettable experience on November 28-29!' primaryBtn={"Register"} secondaryBtn={"Learn More"} primaryBtnLink={"/registration"} secondaryBtnLink={"/event"} />
-                </div>
-
-
-
               </div>
             </div>
+            {/* Event Highlight Closed */}
 
             {/* FeedBack Section */}
             <section id='feedback'>
@@ -237,8 +227,16 @@ function Event() {
               <div className='grid grid-cols-4 gap-x-0 gap-y-7 w-full px-20 py-4 justify-items-center font-Montserrat items-stretch'>
                 <FeedBack />
               </div>
-
             </section>
+            {/* FeedBack Section Closed */}
+
+
+            {/* Cta Section */}
+            <div className='pt-40'>
+              <EventCta heading='Join Us for the Ultimate Tech Experience!' description='Get ready to explore technology and innovative ideas at our annual tech fest. Mark your calendars for an unforgettable experience on November 28-29!' primaryBtn={"Register"} secondaryBtn={"Learn More"} primaryBtnLink={"/registration"} secondaryBtnLink={"/event"} />
+            </div>
+            {/* Cta Section Closed */}
+
 
           </div>
         </SkeletonTheme>
