@@ -95,15 +95,16 @@ function Event() {
 
               {/* Event Highlight */}
               <div id='eventHightlight' className='font-Orbitron w-full'>
-                <div id='textContain' className='pt-20'>
+                <div id='textContain' className='lg:pt-20 pt-5'>
                   <h1 className='text-center text-4xl font-bold underline'>Event Highlight</h1>
                   <p className='text-center py-3 font-Montserrat'>Explore captivating moments from our past tech fests!</p>
                 </div>
 
                 {/* Video Section */}
                 <div id="videoSection" className=''>
-                  <div id="" className='flex gap-x-10  px-16 gap-y-6 items-center justify-items-center'>
-                    <div id="video1" className='w-[450px] h-[360px] relative'>
+                  
+                  <div id="" className='flex gap-x-10 flex-col lg:flex-row flex-wrap px-16 py-10 gap-y-10 justify-center items-center'>
+                    <div id="video1" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -116,7 +117,7 @@ function Event() {
 
 
                     </div>
-                    <div id="video2" className='w-[450px] h-[360px] relative'>
+                    <div id="video2" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -131,7 +132,7 @@ function Event() {
                       }
 
                     </div>
-                    <div id="video3" className='w-[450px] h-[360px] relative'>
+                    <div id="video3" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -144,9 +145,7 @@ function Event() {
                         )
                       }
                     </div>
-                  </div>
-                  <div id="" className='flex gap-x-10  px-16  items-center justify-center'>
-                    <div id="video3" className='w-[450px] h-[360px] relative'>
+                    <div id="video3" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -160,7 +159,7 @@ function Event() {
                       }
                       <script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
-                    <div id="video3" className='w-[450px] h-[360px] relative'>
+                    <div id="video3" className='w-[400px] h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -192,11 +191,11 @@ function Event() {
 
               {/* FeedBack Section */}
               <section id='feedback'>
-                <div className='flex justify-center flex-col py-20 gap-2 items-center'>
+                <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center'>
                   <h1 className='font-Orbitron text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
                   <p className='font-Montserrat text-white text-base text-center '>An unforgettable experience filled with learning and fun!</p>
                 </div>
-                <div className='grid grid-cols-4 gap-x-0 gap-y-7 w-full px-20 py-4 justify-items-center font-Montserrat items-stretch'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 xl:gap-x-0 gap-y-7 w-full px-10 xl:px-20 py-4 justify-items-center font-Montserrat items-stretch'>
                   <FeedBack />
                 </div>
               </section>
@@ -204,12 +203,12 @@ function Event() {
 
               {/* How to Participate in the Event */}
               <div id='howToParticipate' className='font-Montserrat text-center justify-center items-center flex flex-col gap-3 py-20'>
-                <div className='flex flex-col justify-center items-center text-center w-3/6 gap-4'>
+                <div className='flex flex-col justify-center items-center text-center w-3/4 lg:w-3/6 gap-4'>
                   <p className='text-base  text-center font-bold'>Join</p>
                   <h1 className='text-4xl font-Orbitron underline text-center font-bold'>How to Participate in Our Tech Fest</h1>
                   <p className='text-base  text-center '>Participating in our tech fest is easy and exciting! Follow these simple steps to secure your spot and showcase your skills.</p>
                 </div>
-                <div className='grid grid-cols-3 justify-items-center gap-12 px-12 py-7 '>
+                <div className='flex flex-wrap justify-center items-center gap-12 px-12 py-7 '>
                   <div id="step1" className='flex flex-wrap flex-col gap-4 justify-center items-center' p-4>
                     <div className='rounded-full bg-white w-[60px] h-[60px] flex justify-center items-center text-slate-950 text-2xl font-bold'>1</div>
                     <h1 className=' text-center font-Montserrat text-2xl font-bold '>Step 1: Register Online Today</h1>
@@ -238,7 +237,7 @@ function Event() {
               {/* Faq Section */}
               <section className='flex flex-col justify-center py-20  items-center'>
                 <h1 className=' text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
-                <div className='w-1/2 font-Montserrat'>
+                <div className='w-[70%] xl:w-1/2 font-Montserrat'>
                   <AccordionCustomIcon />
                 </div>
               </section>
