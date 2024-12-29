@@ -16,7 +16,7 @@ const ImageSlider = () => {
   ]; // Array of headings
 
   return (
-    <div className="overflow-hidden scrollGradient relative z-10 w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center mt-32">
+    <div className="overflow-hidden scrollGradient relative z-10 w-full h-[100px] bg-gradient-to-r from-purple-500 to-blue-500 flex items-center">
       {/* Scrolling container */}
       <div className="image-slider flex  gap-12 animate-scroll">
         {/* Dynamically render the headings */}
