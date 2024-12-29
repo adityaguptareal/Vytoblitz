@@ -96,7 +96,7 @@ function Home() {
     <>
 
       <div className="relative  text-white w-screen h-full"  id="MainScreen">
-        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-25 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
+        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-15 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
         <Navbar />
         {/* Hero Section */}
         <div
@@ -104,8 +104,8 @@ function Home() {
           className="flex relative z-20 flex-col  gap-12  justify-around items-center w-full py-28 h-full px-5 lg:px-20 pt-10"
         >
           {/* Left Section */}
-          <div id="left" className="flex flex-col justify-center items-center gap-6 w-full ">
-            <div id="textContainer" className=" flex flex-col justify-center items-center w-full md:w-1/2 gap-5 text-center ">
+          <div id="left" className="flex flex-col justify-center items-center gap-6 lg:w-[88%] w-full ">
+            <div id="textContainer" className=" flex flex-col justify-center items-center w-10/12 md:w-1/2 gap-5 text-center ">
               <h1 className="font-Orbitron text-4xl font-bold  text-center  lg:py-3 ">
                 VytoBlitz 1.O: Where Innovation Meets Creativity!
               </h1>
