@@ -8,6 +8,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton"
 import { useEffect } from 'react'
 import FeedBack from '../Components/FeedBack'
 import AccordionCustomIcon from '../Components/Faqs'
+import Button from '../Components/Button'
 
 function Event() {
   const [loader, setloader] = useState(true)
@@ -102,7 +103,7 @@ function Event() {
 
                 {/* Video Section */}
                 <div id="videoSection" className=''>
-                  
+
                   <div id="" className='flex gap-x-10 flex-col lg:flex-row flex-wrap  px-0 md:px-16 py-10 gap-y-10 justify-center items-center'>
                     <div id="video1" className='w-[400px] h-[240px] relative'>
                       {
@@ -178,20 +179,148 @@ function Event() {
               {/* Event Highlight Closed */}
 
 
-{/* Individual Event Section */}
-<section id="Event">
-
-
-</section>
+              {/* Individual Event Section */}
+              <section id="Event" className='py-20 flex-col items-center justify-center flex gap-10 lg:gap-40'>
 
 
 
+               { /* Quizathon */}
+                <section id='quizathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                  </div>
+                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                    <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                      Test Your Knowledge: Join Our Exciting Quiz Event!
+                    </h1>
+                    <p className='text-base'>
+                      Dive into a world of knowledge and competition at our Quiz event. Challenge yourself and your peers with intriguing questions across various topics!
+                    </p>
+                    <div id="statsContainer" className='font-Montserrat flex flex-col md:flex-row gap-6 md:gap-16'>
+                      <div id="stats1" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-5xl font-bold' id="statsnumber">80%</h1>
+                        <p>Engaging questions and thrilling prizes await!</p>
+                      </div>
+                      <div id="stats2" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-5xl font-bold' id="statsnumber">95%</h1>
+                        <p>Participants rave about the fun and excitement!</p>
+                      </div>
+                    </div>
+                    <div>
+                      <Button text="Learn More" navigate="/event/artistryarena" />
+                    </div>
+                  </div>
+                </section>
+                {/* Quizathon Closed */}
 
-{/* Individual Event Section Closed */}
+                        <section id='ArtistryArena' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                          <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                          <span className='font-bold text-base'>Create</span>
+                          <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                            Unleash Your Creativity at the Canva Competition
+                          </h1>
+                          <p className='text-base'>
+                            Dive into a world of knowledge and competition at our Quiz event. Challenge yourself and your peers with intriguing questions across various topics!
+                          </p>
+
+                          <div>
+                            <Button text="Learn More" navigate="/event/artistryarena" />
+                          </div>
+
+                          </div>
+
+                          <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                          <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                          </div>
+                        </section>
+                        {/* Artistry Arena Closed */}
+
+                {/* Hackathon */}
+                <section id='Hackathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                  </div>
+                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                    <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                      Unleash Your Creativity at Our Thrilling Hackathon Event!
+                    </h1>
+                    <p className='text-base'>
+                      Join us for an exhilarating Hackathon where innovation meets collaboration. Participants will tackle real-world challenges, showcasing their skills and creativity.
+                    </p>
+                    <div id="statsContainer" className='font-Montserrat flex flex-col md:flex-row gap-6 md:gap-16'>
+                      <div id="stats1" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-5xl font-bold' id="statsnumber">744</h1>
+                        <p>Registrations</p>
+                      </div>
+                      <div id="stats2" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-5xl font-bold' id="statsnumber">1,06,945</h1>
+                        <p>Impressions</p>
+                      </div>
+                    </div>
+                    <div>
+                      <Button text="Learn More" navigate="/event/hackathon" />
+                    </div>
+                  </div>
+                </section>
+                {/* Hackathon Closed */}
+               { /* Cultural Carnival */}
+                <section id='culturalCarnival' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                    <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                      Experience the Vibrancy of Our Cultural Carnival: A Celebration of Diversity
+                    </h1>
+                    <p className='text-base'>
+                      Join us for an unforgettable Cultural Carnival, where creativity and tradition collide in a vibrant showcase of performances, art, and food from around the world. Immerse yourself in the rich tapestry of cultures as you enjoy live music, dance, and interactive workshops that celebrate our diverse community.
+                    </p>
+                    <div>
+                      <Button text="Learn More" navigate="/event/culturalcarnival" />
+                    </div>
+                  </div>
+                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                  </div>
+                </section>
+                {/* Cultural Carnival Closed */}
+                {/* Gaming  */}
+                <section id='Game' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                  </div>
+                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                    <span className='font-bold text-base'>Gaming</span>
+                    <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                      Unleash Your Competitive Spirit at Esports Tournament!
+                    </h1>
+                    <p className='text-base'>
+                      Join us for an electrifying Esports event where gamers compete for glory and prizes. Experience the thrill of live matches and witness top-tier talent in action.
+                    </p>
+                    <div id="statsContainer" className='font-Montserrat flex flex-col md:flex-row gap-6 md:gap-16'>
+                      <div id="stats1" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-xl font-bold' id="statsnumber">Game on</h1>
+                        <p>Compete in popular games and showcase your skills against the best players.</p>
+                      </div>
+                      <div id="stats2" className='flex gap-2 flex-col max-w-[250px]'>
+                        <h1 className='text-xl font-bold' id="statsnumber">Participant Feedback</h1>
+                        <p>“An unforgettable experience filled with excitement and fierce competition!”</p>
+                      </div>
+                    </div>
+                    <div>
+                      <Button text="Join" navigate="/event/esports" />
+                    </div>
+                  </div>
+                </section>
+                {/* Gaming Closed  */}
+
+              </section>
+
+
+
+
+              {/* Individual Event Section Closed */}
 
               {/* FeedBack Section */}
               <section id='feedback'>
-                <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center max-w-sm mx-auto'>
+                <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center md:max-w-[450px] max-w-sm mx-auto'>
                   <h1 className='font-Orbitron text-3xl md:text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
                   <p className='font-Montserrat text-white text-base text-center '>An unforgettable experience filled with learning and fun!</p>
                 </div>
