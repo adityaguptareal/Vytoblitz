@@ -96,7 +96,7 @@ function Home() {
     <>
 
       <div className="relative  text-white w-screen h-full"  id="MainScreen">
-        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-15 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
+        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
         <Navbar />
         {/* Hero Section */}
         <div
