@@ -3,7 +3,7 @@ import React from 'react'
 function Hackathon() {
   return (
     <div>
-      This is HAckathon event page
+      This is HAckathon event page of vytoblitz event
     </div>
   )
 }
