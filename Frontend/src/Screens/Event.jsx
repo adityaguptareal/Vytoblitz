@@ -9,9 +9,11 @@ import { useEffect } from 'react'
 import FeedBack from '../Components/FeedBack'
 import AccordionCustomIcon from '../Components/Faqs'
 import Button from '../Components/Button'
+// import Navigate from "react-router-dom"
 
 function Event() {
   const [loader, setloader] = useState(true)
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
