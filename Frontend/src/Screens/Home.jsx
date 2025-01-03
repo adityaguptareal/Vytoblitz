@@ -126,7 +126,7 @@ function Home() {
             </div>
             <div className="my-4 flex MobileM:flex-row flex-col gap-6">
               <Button navigate="/registration" text="Join WaitList !" />
-              <Button text="Explore Event" rounded="full" />
+              <Button navigate={"/event"} text="Explore Event" rounded="full" />
             </div>
             <Stats />
           </div>
