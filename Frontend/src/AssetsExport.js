@@ -26,6 +26,18 @@ import Swati from "./assets/Landingpage/EventCorditnators/Swati.png"
 import Vaibhav from "./assets/Landingpage/EventCorditnators/Vaibhav.png"
 import Vanshika from "./assets/Landingpage/EventCorditnators/Vanshika.png"
 import Vishal from "./assets/Landingpage/EventCorditnators/Vishal.png"
+import Quizathon1 from "./assets/Quizathon/Quizathon1.webp"
+import Quizathon2 from "./assets/Quizathon/Quizathon2.webp"
+import Quizathon3 from "./assets/Quizathon/Quizathon3.webp"
+import Quizathon4 from "./assets/Quizathon/Quizathon4.webp"
+import ArtistryArena1 from "./assets/ArtistryArena/ArtistryArena1.webp"
+import ArtistryArena2 from "./assets/ArtistryArena/ArtistryArena2.webp"
+import ArtistryArena3 from "./assets/ArtistryArena/ArtistryArena3.webp"
+import ArtistryArena4 from "./assets/ArtistryArena/ArtistryArena4.jpg"
+import Hackathon1 from "./assets/Hackathon/HackathonVytoblitz1.jpg"
+import Hackathon2 from "./assets/Hackathon/HackathonVytoblitz2.jpg"
+import Hackathon3 from "./assets/Hackathon/HackathonVytoblitz3.jpg"
+import Hackathon4 from "./assets/Hackathon/HackathonVytoblitz4.jpg"
 
 
 
@@ -58,7 +70,19 @@ const Images = {
     Swati,
     Vaibhav,
     Vanshika,
-    Vishal
+    Vishal,
+    Quizathon1,
+    Quizathon2,
+    Quizathon3,
+    Quizathon4,
+    ArtistryArena1,
+    ArtistryArena2,
+    ArtistryArena3,
+    ArtistryArena4,     
+    Hackathon1, 
+    Hackathon2,
+    Hackathon3,
+    Hackathon4
 
 
 }
