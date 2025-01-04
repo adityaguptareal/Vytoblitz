@@ -58,10 +58,11 @@ function Cultural() {
   return (
     <div className='bg-gray-950'>
       {/* Page Hero */}
-      <div id="pageHero" className='relative top-0 w-screen h-[85vh] md:h-[65vh]'>
-        <div id='background' className='absolute top-0 w-full h-full opacity-35' style={{
-          background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
-        }}></div>
+      <div id="pageHero" className='relative top-0 w-screen h-[80%] 'style={{
+         background: 'linear-gradient(90deg, rgba(88,0,152,1) 0%, rgba(0,112,197,1) 50%, rgba(21,21,21,1) 100%)'
+         ,
+        }}>
+        {/* <div id='background' className='absolute top-0 w-full h-full opacity-35' ></div> */}
         <Navbar />
         <div className='flex flex-col items-start justify-center'>
           <div className='font-Montserrat flex flex-col gap-3 relative px-10 md:px-20 py-10 md:py-20'>
@@ -147,10 +148,10 @@ function Cultural() {
         <ul className='list-disc list-inside'>
           <li className='mb-3'><strong>10:00 AM - 10:30 AM:</strong> Registration and Welcome</li>
           <li className='mb-3'><strong>10:30 AM - 11:30 AM:</strong> Opening Ceremony</li>
-          <li className='mb-3'><strong>11:30 AM - 12:30 PM:</strong> Cultural Performances</li>
-          <li className='mb-3'><strong>12:30 PM - 1:30 PM:</strong> Lunch Break</li>
-          <li className='mb-3'><strong>1:30 PM - 3:00 PM:</strong> Workshops and Activities</li>
-          <li className='mb-3'><strong>3:00 PM - 4:00 PM:</strong> Closing Ceremony and Awards</li>
+          <li className='mb-3'><strong>11:30 AM - 2:00 PM:</strong> Cultural Performances</li>
+          <li className='mb-3'><strong>2:00 PM - 3:00 PM:</strong> Lunch Break</li>
+          <li className='mb-3'><strong>3:00 PM - 3:30 PM:</strong> Award Distribution</li>
+          <li className='mb-3'><strong>3:30 PM - 4:00 PM:</strong> Closing Ceremony </li>
         </ul>
       </div>
 
