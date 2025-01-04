@@ -56,14 +56,14 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <div id="buttons" className="flex flex-col md:flex-row gap-3">
-            {/* <Link to="/login">
+          {/* <div id="buttons" className="flex flex-col md:flex-row gap-3">
+             <Link to="/login">
             <Button text="Login" rounded="full" />
-            </Link> */}
-            <Link to="/registration">
-            <Button text="Join waitlist" rounded="full" />
             </Link>
-          </div>
+             <Link to="/registration">
+            <Button text="Join waitlist" rounded="full" />
+            </Link> 
+          </div> */}
 
         </div>
       </div>
