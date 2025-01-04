@@ -58,45 +58,45 @@ function Hackathon() {
       </div>
 
       {/* Event Gallery */}
-     <motion.div 
-            id='eventGallery' 
-            className='px-10 md:px-20 lg:px-40 py-10 w-full md:w-[95%] mx-auto'
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <h2 className='text-4xl md:text-5xl text-center font-bold font-Montserrat pb-10 md:pb-20'>Event Gallery</h2>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 place-items-center h-[500px]'>
-              <motion.div 
+      <motion.div
+        id='eventGallery'
+        className='px-10 md:px-20 lg:px-40 py-10 w-full md:w-[95%] mx-auto'
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h2 className='text-4xl md:text-5xl text-center font-bold font-Montserrat pb-10 md:pb-20'>Event Gallery</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 place-items-center h-[500px]'>
+          <motion.div
             className='col-span-2 row-span-2 h-full'
             whileHover={{ scale: 1.1 }}
-              >
+          >
             <img src={data.image1} alt="Gallery Image 1" className='w-full h-full object-cover rounded-lg' />
-              </motion.div>
-              <motion.div 
+          </motion.div>
+          <motion.div
             whileHover={{ scale: 1.1 }}
-              >
+          >
             <img src={data.image3} alt="Gallery Image 2" className='w-full h-full object-cover rounded-lg' />
-              </motion.div>
-              <motion.div 
+          </motion.div>
+          <motion.div
             whileHover={{ scale: 1.1 }}
-              >
+          >
             <img src={data.image2} alt="Gallery Image 3" className='w-full h-full object-cover rounded-lg' />
-              </motion.div>
-              <motion.div 
+          </motion.div>
+          <motion.div
             className='col-span-2'
             whileHover={{ scale: 1.1 }}
-              >
+          >
             <img src={data.image4} alt="Gallery Image 4" className='w-full h-full object-cover rounded-lg' />
-              </motion.div>
-            </div>
           </motion.div>
-          <motion.div 
-            className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          ></motion.div>
+        </div>
+      </motion.div>
+      <motion.div
+        className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      ></motion.div>
 
       {/* Winners Section */}
       <motion.div
@@ -114,20 +114,20 @@ function Hackathon() {
       </motion.div>
 
       {/* Event Description Section */}
-        <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>
-          <h2 className='text-3xl font-bold mb-5'>Event Description</h2>
-          <p className='mb-5'>
-            Join us at the VytoHack Clash, where creativity meets technology. This event is designed for those who are passionate about coding and problem-solving.
-          </p>
-          <p className='mb-5'>
-            Participants will tackle real-world challenges in a collaborative environment. The event will take place at the ITS Engineering COE Room, offering a dynamic and engaging experience for all.
-          </p>
-          <p>
-            Don't miss this chance to innovate, collaborate, and compete for amazing prizes. Register now and be part of this exciting hackathon!
-          </p>
-        </div>
+      <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>
+        <h2 className='text-3xl font-bold mb-5'>Event Description</h2>
+        <p className='mb-5'>
+          Join us at the VytoHack Clash, where creativity meets technology. This event is designed for those who are passionate about coding and problem-solving.
+        </p>
+        <p className='mb-5'>
+          Participants will tackle real-world challenges in a collaborative environment. The event will take place at the ITS Engineering COE Room, offering a dynamic and engaging experience for all.
+        </p>
+        <p>
+          Don't miss this chance to innovate, collaborate, and compete for amazing prizes. Register now and be part of this exciting hackathon!
+        </p>
+      </div>
 
-        {/* Event Schedule Section */}
+      {/* Event Schedule Section */}
       <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>
         <h2 className='text-3xl font-bold mb-5'>Event Schedule</h2>
         <ul className='list-disc list-inside'>
