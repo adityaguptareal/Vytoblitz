@@ -31,7 +31,7 @@ function App() {
           <Route path='/event/quizathon' element={<Quizathon />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/registration' element={<Registration />} />
+          {/* <Route path='/registration' element={<Registration />} /> */}
 
           <Route path='*' element={<Error />} />
         </Routes>
