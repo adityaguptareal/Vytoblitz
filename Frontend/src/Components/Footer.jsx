@@ -32,7 +32,7 @@ function Footer() {
 {/* Quick link Section */}
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Quick Link</span>
-    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
+    <ul className='pt-4 flex flex-col gap-1'>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Event</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>About</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Contact</li>
@@ -42,7 +42,7 @@ function Footer() {
 </div>
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Resources</span>
-    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
+    <ul className='pt-4 flex flex-col gap-1'>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Blog</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Support</li>
         <li className='text-sm cursor-pointer hover:text-purple-500'>Team</li>
