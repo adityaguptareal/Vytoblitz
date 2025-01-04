@@ -38,6 +38,25 @@ import Hackathon1 from "./assets/Hackathon/HackathonVytoblitz1.jpg"
 import Hackathon2 from "./assets/Hackathon/HackathonVytoblitz2.jpg"
 import Hackathon3 from "./assets/Hackathon/HackathonVytoblitz3.jpg"
 import Hackathon4 from "./assets/Hackathon/HackathonVytoblitz4.jpg"
+import Cultural1 from "./assets/CulturalCarnival/culturalCarnival-1.webp"
+import Cultural2 from "./assets/CulturalCarnival/culturalCarnival-2.webp"
+import Cultural3 from "./assets/CulturalCarnival/culturalCarnival-3.webp"
+import Cultural4 from "./assets/CulturalCarnival/culturalCarnival-4.webp"
+import Cultural5 from "./assets/CulturalCarnival/culturalCarnival-5.webp"
+import Cultural6 from "./assets/CulturalCarnival/culturalCarnival-6.webp"
+import Cultural7 from "./assets/CulturalCarnival/culturalCarnival-7.webp"
+import Cultural8 from "./assets/CulturalCarnival/culturalCarnival-8.webp"
+import Cultural9 from "./assets/CulturalCarnival/culturalCarnival-9.webp"
+import Cultural10 from "./assets/CulturalCarnival/culturalCarnival-10.webp"
+import Cultural11 from "./assets/CulturalCarnival/culturalCarnival-11.webp"
+import Cultural12 from "./assets/CulturalCarnival/culturalCarnival-12.webp"
+import Cultural13 from "./assets/CulturalCarnival/culturalCarnival-13.webp"
+import Cultural14 from "./assets/CulturalCarnival/culturalCarnival-14.webp"
+import Cultural15 from "./assets/CulturalCarnival/culturalCarnival-15.webp"
+import Esports1 from "./assets/Esports/Esports1.jpg"
+import Esports2 from "./assets/Esports/Esports2.jpg"
+import Esports3 from "./assets/Esports/Esports3.jpg"
+import Esports4 from "./assets/Esports/Esports4.jpg"
 
 
 
@@ -78,12 +97,30 @@ const Images = {
     ArtistryArena1,
     ArtistryArena2,
     ArtistryArena3,
-    ArtistryArena4,     
-    Hackathon1, 
+    ArtistryArena4,
+    Hackathon1,
     Hackathon2,
     Hackathon3,
-    Hackathon4
-
+    Hackathon4,
+    Cultural1,
+    Cultural2,
+    Cultural3,
+    Cultural4,
+    Cultural5,
+    Cultural6,
+    Cultural7,
+    Cultural8,
+    Cultural9,
+    Cultural10,
+    Cultural11,
+    Cultural12,
+    Cultural13,
+    Cultural14,
+    Cultural15,
+    Esports1,
+    Esports2,
+    Esports3,
+    Esports4
 
 }
 export default Images
