@@ -4,7 +4,7 @@ import RecatangleOutlineButton from "./RecatangleOutlineButton.jsx";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 
-function EventCard({ src, date, title, time, location, registerBtnText, informationText }) {
+function EventCard({ src, date, title, time, location, registerBtnText, informationText,navigate }) {
   return (
     <>
       <div id='Event' className='flex flex-wrap flex-col lg:flex-row lg:gap-7 gap-14 items-center lg:items-start justify-center mt-4 lg:border-b-[1px] lg:border-white border-0 w-auto lg:w-[920px]'>
@@ -19,8 +19,9 @@ function EventCard({ src, date, title, time, location, registerBtnText, informat
           </div>
         </div>
         <div id="Buttons" className='flex lg:flex-col flex-row gap-5'>
-          <RectangleButton text={registerBtnText} />
-          <RecatangleOutlineButton text={informationText} />
+          
+          <RectangleButton   text={registerBtnText} />
+          <RecatangleOutlineButton navigateTo={navigate} text={informationText} />
         </div>
       </div>
     </>
