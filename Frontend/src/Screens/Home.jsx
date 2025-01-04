@@ -112,7 +112,7 @@ function Home() {
               <div id="Venue" className='flex flex-col justify-center items-start'>
                 <p className="font-Montserrat text-sm md:text-base flex justify-center items-start text-left md:text-center  gap-3">
                   <BsFillCalendar2DateFill />
-                  Date: 28 November, 2024
+                  Date: 27 November, 2024 - 29 November 2024 
                 </p>
                 <p className="font-Montserrat text-sm md:text-base flex justify-center items-start text-left md:text-center  gap-3">
                   <FaLocationDot />
@@ -125,7 +125,7 @@ function Home() {
               </p>
             </div>
             <div className="my-4 flex MobileM:flex-row flex-col gap-6">
-              <Button navigate="/registration" text="Join WaitList !" />
+              {/* <Button navigate="/registration" text="Join WaitList !" /> */}
               <Button navigate={"/event"} text="Explore Event" rounded="full" />
             </div>
             <Stats />
@@ -170,7 +170,7 @@ function Home() {
         <div id='right' className='lg:w-2/6 md:w-4/6 w-full flex flex-col items-center justify-center'>
           <h1 className='font-Orbitron font-extrabold text-4xl text-center my-4 xl:my-8'
           >What is VytoBlitz ?</h1>
-          <p className='font-Montserrat text-[14px] xl:text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the  fest of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
+          <p className='font-Montserrat text-[14px] xl:text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the Delhi / NCR level Tech Fest  of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
             <br />
             Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
         </div>
