@@ -48,7 +48,7 @@ function Event() {
                     </form>
                     <button className='px-2 MobileM:px-5 font-medium sm:px-6 py-2 text-white' style={{
                       background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
-                    }}>Reserve My Spot</button>
+                    }}>Registration Closed !</button>
                   </div>
                   <span className='text-sm'>By clicking Reserve My Spot, you agree to our Terms and Conditions.</span>
                 </div>
@@ -74,7 +74,7 @@ function Event() {
                   </div>
                   <span style={{
                     background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
-                  }} className='cursor-pointer text-white rounded-md font-semibold px-3 py-1 text-sm'>Only 10 Spot !</span>
+                  }} className='cursor-pointer text-white rounded-md font-semibold px-3 py-1 text-sm'>Event Ended !</span>
                 </div>
               </div>
 
