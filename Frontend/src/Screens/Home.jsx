@@ -95,7 +95,7 @@ function Home() {
   return (
     <>
 
-      <div className="relative  text-white w-screen h-full"  id="MainScreen">
+      <div className="relative  text-white w-screen h-full" id="MainScreen">
         <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
         <Navbar />
         {/* Hero Section */}
@@ -178,19 +178,19 @@ function Home() {
       {/* Explore Our Events */}
       <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center '>
         <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
-        <EventCard src={Images.Quizathon} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+        <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
         {/*  */}
-        <EventCard src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+        <EventCard navigate={"/event/artistryarena"} src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
         {/* Elite Combat */}
-        <EventCard src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+        <EventCard navigate={"/event/esports"} src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
         {/* VytoHackClash */}
-        <EventCard src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+        <EventCard navigate={"/event/hackathon"} src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
 
         {/* Cultural */}
-        <EventCard src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
+        <EventCard navigate={"/event/cultural"} src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"Registration Closed !"} informationText={"More Info"} />
       </div>
       <div>
         {/* Event Gallery */}
