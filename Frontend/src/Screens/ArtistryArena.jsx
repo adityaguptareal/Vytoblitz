@@ -16,9 +16,9 @@ function ArtistryArena() {
     date: "28 November 2024",
     location: "ITS Engineering LAB 3 ",
     time: "11 AM-12 PM",
-    rank1: "John Doe",
-    rank2: "Jane Smith",
-    rank3: "Bob Johnson",
+    rank1: " Abhinav Jain and Ritu Rani (Dronacharya)",
+    rank2: "Abhay yadav (ITS Engineering College)",
+    rank3: "Rahul raj yadav(ITS Engineering College)",
     image1: Images.ArtistryArena1,
     image2: Images.ArtistryArena2,
     image3: Images.ArtistryArena3,
@@ -32,10 +32,10 @@ function ArtistryArena() {
   return (
     <div className='bg-gray-950'>
       {/* Page Hero */}
-      <div id="pageHero" className='relative top-0 w-screen h-[85vh] md:h-[65vh]'>
-        <div id='background' className='absolute top-0 w-full h-full opacity-35' style={{
-          background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
-        }}></div>
+      <div id="pageHero" className='relative top-0 w-screen h-[80%] 'style={{
+         background: 'linear-gradient(90deg, rgba(88,0,152,1) 0%, rgba(0,112,197,1) 50%, rgba(21,21,21,1) 100%)'
+         ,
+        }}>
         <Navbar />
         <div className='flex flex-col items-start justify-center'>
           <div className='font-Montserrat flex flex-col gap-3 relative px-10 md:px-20 py-10 md:py-20'>
