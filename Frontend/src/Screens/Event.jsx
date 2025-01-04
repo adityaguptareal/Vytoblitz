@@ -9,10 +9,11 @@ import { useEffect } from 'react'
 import FeedBack from '../Components/FeedBack'
 import AccordionCustomIcon from '../Components/Faqs'
 import Button from '../Components/Button'
-// import Navigate from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 
 function Event() {
   const [loader, setloader] = useState(true)
+  const navigate = useNavigate()
 
 
   useEffect(() => {
@@ -189,7 +190,7 @@ function Event() {
                { /* Quizathon */}
                 <section id='quizathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
                   <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                    <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='hover:brightness-50 bg-white w-full lg:w-[500px] h-full'></img>
                   </div>
                   <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
@@ -209,7 +210,7 @@ function Event() {
                       </div>
                     </div>
                     <div>
-                      <Button text="Learn More" navigate="/event/artistryarena" />
+                      <Button text="Learn More" navigate="/event/quizathon" />
                     </div>
                   </div>
                 </section>
@@ -232,7 +233,7 @@ function Event() {
                           </div>
 
                           <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                          <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                          <img alt='VytoBlitz Event Image' src='https://plus.unsplash.com/premium_photo-1721225465446-02f5b991a37f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className=' w-full lg:w-[500px] h-full'></img>
                           </div>
                         </section>
                         {/* Artistry Arena Closed */}
@@ -240,7 +241,7 @@ function Event() {
                 {/* Hackathon */}
                 <section id='Hackathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
                   <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                    <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1524868857876-218cafbdda8b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='bg-white w-full lg:w-[500px] h-full'></img>
                   </div>
                   <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
@@ -275,18 +276,18 @@ function Event() {
                       Join us for an unforgettable Cultural Carnival, where creativity and tradition collide in a vibrant showcase of performances, art, and food from around the world. Immerse yourself in the rich tapestry of cultures as you enjoy live music, dance, and interactive workshops that celebrate our diverse community.
                     </p>
                     <div>
-                      <Button text="Learn More" navigate="/event/culturalcarnival" />
+                      <Button text="Learn More" navigate="/event/cultural" />
                     </div>
                   </div>
                   <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                    <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1721840317409-c77a9b8abf1e?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
                   </div>
                 </section>
                 {/* Cultural Carnival Closed */}
                 {/* Gaming  */}
                 <section id='Game' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
                   <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                    <div className='bg-white w-full lg:w-[500px] h-full'></div>
+                    <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1548686304-637b8e7c663b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='bg-white w-full lg:w-[500px] h-full'></img>
                   </div>
                   <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <span className='font-bold text-base'>Gaming</span>
@@ -366,7 +367,7 @@ function Event() {
               {/* Cta Section Closed */}
 
               {/* Faq Section */}
-              <section className='flex flex-col justify-center py-20  items-center'>
+              <section id='questions' className='flex flex-col justify-center py-20  items-center'>
                 <h1 className=' text-3xl md:text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
                 <div className='w-[70%] xl:w-1/2 font-Montserrat'>
                   <AccordionCustomIcon />
@@ -378,7 +379,7 @@ function Event() {
               <div id='contactCta' className='flex font-Montserrat flex-col gap-3 justify-center items-center'>
                 <h1 className='text-3xl text-center font-Orbitron font-bold text-white'>Still Have Questions ?</h1>
                 <p className='text-base text-center text-white'>Reach out to us anytime!</p>
-                <button className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
+                <button onClick={()=>navigate("/contact")} className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
               </div>
 
               {/* Contact CTA Closed */}
