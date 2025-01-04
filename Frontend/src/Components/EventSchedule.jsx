@@ -1,7 +1,9 @@
 import { React, useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function EventSchedule({ time, eventName, venue }) {
     const [date, setDate] = useState('28 Nov');
+    const navigate = useNavigate();
   
 
     const eventData28Nov = [{
@@ -10,12 +12,14 @@ function EventSchedule({ time, eventName, venue }) {
         date: "28 Nov",
         eventName: "Algo Quizathon",
         venue: "ITS Engineering LAB 4",
+        eventPage:"/event/quizathon"
     }, {
         id: 2,
         time: "11:00 AM",
         date: "28 Nov",
         eventName: "Artistry Arena",
         venue: "TS Engineering LAB 3 ",
+        eventPage:"/event/artistryarena"
     },
     {
         id: 3,
@@ -23,12 +27,14 @@ function EventSchedule({ time, eventName, venue }) {
         date: "28 Nov",
         eventName: "Esports Game",
         venue: "ITS Engineering COE Room",
+        eventPage:"/event/esports"
     }, {
         id: 4,
         time: "9:00 AM",
         date: "28 Nov",
         eventName: "Vyto HackClash",
         venue: "ITS Engineering COE Room ",
+        eventPage:"/event/hackathon"
     }];
 
     const eventData29Nov = [{
@@ -37,6 +43,7 @@ function EventSchedule({ time, eventName, venue }) {
         date: "29 Nov",
         eventName: "Cultural Carnival",
         venue: "ITS Engineering Sardar Patel Auditoriam",
+        eventPage:"/event/cultural"
     }];
 
     const finalDate = date === "28 Nov" ? eventData28Nov : eventData29Nov;
@@ -62,7 +69,7 @@ function EventSchedule({ time, eventName, venue }) {
                                     </div>
                                 </div>
                                 <div id="Venue" className='lg:text-base text-sm'>{eventData.venue}</div>
-                                <button className='bg-transparent border lg:text-base text-sm border-white px-3 py-2'>View Details</button>
+                                <button onClick={()=>navigate(eventData.eventPage)} className='bg-transparent border lg:text-base text-sm border-white px-3 py-2'>View Details</button>
                             </div>
                         </div>
                     );
