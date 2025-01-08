@@ -9,11 +9,11 @@ import { useEffect } from 'react'
 import FeedBack from '../Components/FeedBack'
 import AccordionCustomIcon from '../Components/Faqs'
 import Button from '../Components/Button'
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function Event() {
   const [loader, setloader] = useState(true)
-  const navigate = useNavigate()
+  const navigateTo = useNavigate()
 
 
   useEffect(() => {
@@ -55,7 +55,7 @@ function Event() {
                 </div>
                 <div id="eventRight" className='flex flex-col gap-5 items-center justify-center'>
                   <h1 className='text-3xl text-center font-bold font-Montserrat'>Thu, 28 Nov</h1>
-                  <div id="timeDuration" className='flex justify-center items-center gap-5 border text-white border-white font-Montserrat p-3 divide-x-2'>
+                  <div id="timeDuration" className='flex justify-center items-center gap-5 border text-white border-white font-Montserrat MobileM:p-3 p-0  divide-x-2'>
                     <div id='day' className='pl-5 text-center '>
                       <div className='text-4xl'>0</div>
                       <div className='text-sm'>Days</div>
@@ -108,7 +108,7 @@ function Event() {
                 <div id="videoSection" className=''>
 
                   <div id="" className='flex gap-x-10 flex-col lg:flex-row flex-wrap  px-0 md:px-16 py-10 gap-y-10 justify-center items-center'>
-                    <div id="video1" className='w-[400px] h-[240px] relative'>
+                    <div id="video1" className=' w-[310px] h-[200px]  MobileL:w-[400px] MobileL:h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -121,7 +121,7 @@ function Event() {
 
 
                     </div>
-                    <div id="video2" className='w-[400px] h-[240px] relative'>
+                    <div id="video2" className='w-[310px] h-[200px]  MobileL:w-[400px] MobileL:h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -136,7 +136,7 @@ function Event() {
                       }
 
                     </div>
-                    <div id="video3" className='w-[400px] h-[240px] relative'>
+                    <div id="video3" className='w-[310px] h-[200px]  MobileL:w-[400px] MobileL:h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -149,7 +149,7 @@ function Event() {
                         )
                       }
                     </div>
-                    <div id="video3" className='w-[400px] h-[240px] relative'>
+                    <div id="video3" className='w-[310px] h-[200px]  MobileL:w-[400px] MobileL:h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -163,7 +163,7 @@ function Event() {
                       }
                       <script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
-                    <div id="video3" className='w-[400px] h-[240px] relative'>
+                    <div id="video3" className='w-[310px] h-[200px]  MobileL:w-[400px] MobileL:h-[240px] relative'>
                       {
                         loader ? (
                           <Skeleton style={loaderStyle}></Skeleton>
@@ -187,7 +187,7 @@ function Event() {
 
 
 
-               { /* Quizathon */}
+                { /* Quizathon */}
                 <section id='quizathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
                   <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='hover:brightness-50 bg-white w-full lg:w-[500px] h-full'></img>
@@ -216,27 +216,27 @@ function Event() {
                 </section>
                 {/* Quizathon Closed */}
 
-                        <section id='ArtistryArena' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                          <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
-                          <span className='font-bold text-base'>Create</span>
-                          <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
-                            Unleash Your Creativity at the Canva Competition
-                          </h1>
-                          <p className='text-base'>
-                            Dive into a world of knowledge and competition at our Quiz event. Challenge yourself and your peers with intriguing questions across various topics!
-                          </p>
+                <section id='ArtistryArena' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
+                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                    <span className='font-bold text-base'>Create</span>
+                    <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+                      Unleash Your Creativity at the Canva Competition
+                    </h1>
+                    <p className='text-base'>
+                      Dive into a world of knowledge and competition at our Quiz event. Challenge yourself and your peers with intriguing questions across various topics!
+                    </p>
 
-                          <div>
-                            <Button text="Learn More" navigate="/event/artistryarena" />
-                          </div>
+                    <div>
+                      <Button text="Learn More" navigate="/event/artistryarena" />
+                    </div>
 
-                          </div>
+                  </div>
 
-                          <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
-                          <img alt='VytoBlitz Event Image' src='https://plus.unsplash.com/premium_photo-1721225465446-02f5b991a37f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className=' w-full lg:w-[500px] h-full'></img>
-                          </div>
-                        </section>
-                        {/* Artistry Arena Closed */}
+                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                    <img alt='VytoBlitz Event Image' src='https://plus.unsplash.com/premium_photo-1721225465446-02f5b991a37f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className=' w-full lg:w-[500px] h-full'></img>
+                  </div>
+                </section>
+                {/* Artistry Arena Closed */}
 
                 {/* Hackathon */}
                 <section id='Hackathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
@@ -266,7 +266,7 @@ function Event() {
                   </div>
                 </section>
                 {/* Hackathon Closed */}
-               { /* Cultural Carnival */}
+                { /* Cultural Carnival */}
                 <section id='culturalCarnival' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
                   <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
@@ -308,7 +308,12 @@ function Event() {
                       </div>
                     </div>
                     <div>
-                      <Button text="Join" navigate="/event/esports" />
+                      <button onClick={() => navigateTo("/event/esports")}
+                        className={` MobileM:px-5 px-4 py-2 text-white font-normal rounded-full font-Montserrat hover:scale-[1.09] transition-all`}
+                        style={{
+                          background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
+                        }}
+                      >Join Now</button>
                     </div>
                   </div>
                 </section>
@@ -324,7 +329,7 @@ function Event() {
               {/* FeedBack Section */}
               <section id='feedback'>
                 <div className='flex justify-center flex-col py-7 lg:py-20 gap-2 items-center md:max-w-[450px] max-w-sm mx-auto'>
-                  <h1 className='font-Orbitron text-3xl md:text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
+                  <h1 className='font-Orbitron text-2xl MobileL:text-3xl md:text-4xl font-bold text-center text-white underline'>Participant Feedback</h1>
                   <p className='font-Montserrat text-white text-base text-center '>An unforgettable experience filled with learning and fun!</p>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 xl:gap-x-0 gap-y-7 w-full px-10 xl:px-20 py-4 justify-items-center font-Montserrat items-stretch'>
@@ -368,7 +373,7 @@ function Event() {
 
               {/* Faq Section */}
               <section id='questions' className='flex flex-col justify-center py-20  items-center'>
-                <h1 className=' text-3xl md:text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
+                <h1 className='text-2xl MobileL:text-3xl md:text-4xl underline text-center py-8 font-bold font-Orbitron'>Frequently Asked Questions</h1>
                 <div className='w-[70%] xl:w-1/2 font-Montserrat'>
                   <AccordionCustomIcon />
                 </div>
@@ -379,7 +384,7 @@ function Event() {
               <div id='contactCta' className='flex font-Montserrat flex-col gap-3 justify-center items-center'>
                 <h1 className='text-3xl text-center font-Orbitron font-bold text-white'>Still Have Questions ?</h1>
                 <p className='text-base text-center text-white'>Reach out to us anytime!</p>
-                <button onClick={()=>navigate("/contact")} className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
+                <button onClick={() => navigate("/contact")} className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
               </div>
 
               {/* Contact CTA Closed */}

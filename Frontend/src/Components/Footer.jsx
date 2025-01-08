@@ -55,7 +55,7 @@ function Footer() {
 {/* Social Media Section */}
 <div id='link' className='font-Montserrat'>
     <span className='text-lg font-bold '>Follow us</span>
-    <ul className='pt-4 flex flex-row md:flex-col gap-3'>
+    <ul className='pt-4 flex flex-col gap-3'>
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"https://www.linkedin.com/company/vytoflow-tech/posts/?feedView=all"}>Linkedin</Link></li>
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"https://www.instagram.com/vytoflow_tech/"}>Instagram</Link></li>
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"https://wa.me/+918700745848"}>Whatsapp</Link></li>

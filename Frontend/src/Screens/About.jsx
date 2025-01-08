@@ -46,7 +46,7 @@ function About() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="relative h-96 rounded-lg overflow-hidden"
+            className="relative h-[200px] md:h-96 rounded-lg overflow-hidden"
           >
             <img 
               src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80" 
@@ -61,7 +61,7 @@ function About() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="relative h-96 rounded-lg overflow-hidden"
+            className="relative h-[200px] md:h-96 rounded-lg overflow-hidden"
           >
             <img 
               src={Logo} 

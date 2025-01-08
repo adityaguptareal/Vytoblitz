@@ -12,7 +12,7 @@ function EventCard({ src, date, title, time, location, registerBtnText, informat
         <div id="eventImage">
           <img src={src} alt="" className=' max-w-[300px] lg:max-w-[150px]' />
         </div>
-        <div id="Text Content" className='flex flex-col gap-3'>
+        <div id="Text Content" className=' max-w-[240px] MobileL:max-w-max flex flex-col gap-3'>
           <h1 className='font-Orbitron text-xl font-bold uppercase'>{title}</h1>
           <div id='location' className='text-sm font-Montserrat flex items-center gap-2'>
             <FaLocationDot className="text-lg" /> {location} . <FaClock /> {time}

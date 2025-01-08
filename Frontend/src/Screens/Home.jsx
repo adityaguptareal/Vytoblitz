@@ -168,7 +168,7 @@ function Home() {
 
         </div>
         <div id='right' className='lg:w-2/6 md:w-4/6 w-full flex flex-col items-center justify-center'>
-          <h1 className='font-Orbitron font-extrabold text-4xl text-center my-4 xl:my-8'
+          <h1 className='font-Orbitron font-extrabold text-3xl MobileM:text-4xl text-center my-4 xl:my-8'
           >What is VytoBlitz ?</h1>
           <p className='font-Montserrat text-[14px] xl:text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the Delhi / NCR level Tech Fest  of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
             <br />
@@ -176,8 +176,8 @@ function Home() {
         </div>
       </div>
       {/* Explore Our Events */}
-      <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center '>
-        <h1 className='font-Orbitron text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
+      <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center MobileM:px-0 '>
+        <h1 className='font-Orbitron text-3xl md:text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
         <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/*  */}
