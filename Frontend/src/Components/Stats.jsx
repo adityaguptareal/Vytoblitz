@@ -22,7 +22,7 @@ function Stats() {
 
       {/* Volunteers Stats */}
       <div id="Stats3" className="pr-3 flex flex-col items-center sm:items-start">
-        <h1 className="font-Orbitron text-lg sm:text-xl font-bold">30+</h1>
+        <h1 className="font-Orbitron text-lg sm:text-xl font-bold">70+</h1>
         <div className="font-Montserrat text-sm sm:text-base">Volunteers</div>
       </div>
     </div>

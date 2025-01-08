@@ -6,10 +6,12 @@ import EventMiniCard from '../Components/EventMiniCard'
 import EventGallery from '../Components/EventGallery'
 import Footer from '../Components/Footer'
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom'
 
 
 function Quizathon() {
-
+  const navigate=useNavigate()
+  
   const data = {
     title: "Algo Quizathon",
     decription: "Join the Algo Quizathon to test your knowledge of algorithms and data structures.",
@@ -45,8 +47,8 @@ function Quizathon() {
             <h1 className='text-4xl font-bold'>{data.title}</h1>
             <p className='max-w-[80%]'>{data.decription}</p>
             <div id='groupButton' className='flex flex-col md:flex-row gap-3'>
-              <Button text={"Register Closed"} />
-              <button className='flex justify-center items-center bg-transparent border-[1px] border-white rounded-md px-6 py-2 font-semibold hover:bg-slate-50 hover:text-gray-950 transition duration-300 ease-in-out'>Learn More</button>
+              {/* <Button text={"Register Closed"} /> */}
+              <button onClick={()=>navigate("/contact")} className='flex justify-center items-center bg-transparent border-[1px] border-white rounded-md px-6 py-2 font-semibold hover:bg-slate-50 hover:text-gray-950 transition duration-300 ease-in-out'>Contact us</button>
             </div>
           </div>
         </div>
