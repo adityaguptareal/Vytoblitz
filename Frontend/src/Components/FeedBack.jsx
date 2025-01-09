@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from "motion/react"
 
 function FeedBack() {
     const feedBackData = [
@@ -47,7 +48,7 @@ function FeedBack() {
 
         feedBackData.map((data, index) => {
             return (
-                <div id='container' key={index} className='p-4 border w-72  border-white'>
+                <motion.div initial={{opacity: 0, y: -50}} whileInView={{opacity: 1,y: 0 }} transition={{duration: .3,delay:index * 0.2}} id='container' key={index} className='p-4 border w-72  border-white'>
                     <div className='text-xl'>{data.rating}</div>
                     <div className='text-base'>{data.feedback}</div>
                     <div id='userDetails' className='flex items-center py-2 gap-2'>
@@ -57,7 +58,7 @@ function FeedBack() {
                             <div className='text-base font-thin'>{data.position}</div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             )
         })
 

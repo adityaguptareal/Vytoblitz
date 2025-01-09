@@ -10,6 +10,8 @@ import FeedBack from '../Components/FeedBack'
 import AccordionCustomIcon from '../Components/Faqs'
 import Button from '../Components/Button'
 import { useNavigate } from "react-router-dom"
+import { motion } from "motion/react"
+
 
 function Event() {
   const [loader, setloader] = useState(true)
@@ -98,7 +100,7 @@ function Event() {
 
 
               {/* Event Highlight */}
-              <div id='eventHightlight' className='font-Orbitron w-full'>
+              <motion.div initial={{y:70,opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1,delay:.5,ease:'easeInOut'}} id='eventHightlight' className='font-Orbitron w-full'>
                 <div id='textContain' className='lg:pt-20 pt-5'>
                   <h1 className='text-center text-4xl font-bold underline'>Event Highlight</h1>
                   <p className='text-center py-3 font-Montserrat'>Explore captivating moments from our past tech fests!</p>
@@ -178,7 +180,7 @@ function Event() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
               {/* Event Highlight Closed */}
 
 
@@ -189,10 +191,10 @@ function Event() {
 
                 { /* Quizathon */}
                 <section id='quizathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                  <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='hover:brightness-50 bg-white w-full lg:w-[500px] h-full'></img>
-                  </div>
-                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                  </motion.div>
+                  <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
                       Test Your Knowledge: Join Our Exciting Quiz Event!
                     </h1>
@@ -212,12 +214,12 @@ function Event() {
                     <div>
                       <Button text="Learn More" navigate="/event/quizathon" />
                     </div>
-                  </div>
+                  </motion.div>
                 </section>
                 {/* Quizathon Closed */}
 
                 <section id='ArtistryArena' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                  <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <span className='font-bold text-base'>Create</span>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
                       Unleash Your Creativity at the Canva Competition
@@ -230,20 +232,20 @@ function Event() {
                       <Button text="Learn More" navigate="/event/artistryarena" />
                     </div>
 
-                  </div>
+                  </motion.div>
 
-                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                  <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://plus.unsplash.com/premium_photo-1721225465446-02f5b991a37f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className=' w-full lg:w-[500px] h-full'></img>
-                  </div>
+                  </motion.div>
                 </section>
                 {/* Artistry Arena Closed */}
 
                 {/* Hackathon */}
                 <section id='Hackathon' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                  <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1524868857876-218cafbdda8b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='bg-white w-full lg:w-[500px] h-full'></img>
-                  </div>
-                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                  </motion.div>
+                  <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
                       Unleash Your Creativity at Our Thrilling Hackathon Event!
                     </h1>
@@ -263,12 +265,12 @@ function Event() {
                     <div>
                       <Button text="Learn More" navigate="/event/hackathon" />
                     </div>
-                  </div>
+                  </motion.div>
                 </section>
                 {/* Hackathon Closed */}
                 { /* Cultural Carnival */}
                 <section id='culturalCarnival' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                  <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
                       Experience the Vibrancy of Our Cultural Carnival: A Celebration of Diversity
                     </h1>
@@ -278,18 +280,18 @@ function Event() {
                     <div>
                       <Button text="Learn More" navigate="/event/cultural" />
                     </div>
-                  </div>
-                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                  </motion.div>
+                  <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:.5}} id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1721840317409-c77a9b8abf1e?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
-                  </div>
+                  </motion.div>
                 </section>
                 {/* Cultural Carnival Closed */}
                 {/* Gaming  */}
                 <section id='Game' className='w-full px-6 md:px-12 lg:px-28 gap-6 md:gap-12 justify-center items-center py-4 flex flex-col lg:flex-row'>
-                  <div id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
+                  <motion.div initial={{translateX:-100,opacity:0}} whileInView={{translateX:0,opacity:1}} transition={{duration:1,delay:.5}} id='imageContainer' className='w-full lg:w-1/2 flex justify-center items-center h-[200px] md:h-[300px]'>
                     <img alt='VytoBlitz Event Image' src='https://images.unsplash.com/photo-1548686304-637b8e7c663b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='bg-white w-full lg:w-[500px] h-full'></img>
-                  </div>
-                  <div id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
+                  </motion.div>
+                  <motion.div initial={{translateX:100,opacity:0}} whileInView={{translateX:0,opacity:1}} transition={{duration:1,delay:.5}} id='textContainer' className='flex flex-col gap-5 w-full lg:w-1/2'>
                     <span className='font-bold text-base'>Gaming</span>
                     <h1 className='font-Montserrat text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
                       Unleash Your Competitive Spirit at Esports Tournament!
@@ -315,7 +317,7 @@ function Event() {
                         }}
                       >Join Now</button>
                     </div>
-                  </div>
+                  </motion.div>
                 </section>
                 {/* Gaming Closed  */}
 

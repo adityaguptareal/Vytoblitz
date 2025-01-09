@@ -99,7 +99,7 @@ function Home() {
         <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
         <Navbar />
         {/* Hero Section */}
-        <div
+        <div 
           id="heroSection"
           className="flex relative z-20 flex-col  gap-12  justify-around items-center w-full py-28 h-full px-5 lg:px-20 pt-10"
         >
@@ -177,7 +177,7 @@ function Home() {
       </div>
       {/* Explore Our Events */}
       <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center MobileM:px-0 '>
-        <h1 className='font-Orbitron text-3xl md:text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</h1>
+        <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-3xl md:text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</motion.h1>
         <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/*  */}
@@ -195,14 +195,14 @@ function Home() {
       <div>
         {/* Event Gallery */}
         <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
-          <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</h1>
+          <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}}className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</motion.h1>
           <SingleGallery src={Images.VytFlowTeam} />
           <QuadGallery />
         </div>
       </div>
       {/* Team Section */}
 
-      <h1 className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</h1>
+      <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</motion.h1>
       <div className="overflow-hidden scrollGradient relative w-full h-[300px] flex items-center mt-10">
         <div className="team-image-slider flex  gap-12 animate-scroll">
 
