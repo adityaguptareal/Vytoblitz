@@ -386,7 +386,7 @@ function Event() {
               <div id='contactCta' className='flex font-Montserrat flex-col gap-3 justify-center items-center'>
                 <h1 className='text-3xl text-center font-Orbitron font-bold text-white'>Still Have Questions ?</h1>
                 <p className='text-base text-center text-white'>Reach out to us anytime!</p>
-                <button onClick={() => navigate("/contact")} className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
+                <button onClick={() => navigateTo("/contact")} className='px-3 hover:scale-[1.2] transition  py-2 bg-transparent border border-white'>Contact us</button>
               </div>
 
               {/* Contact CTA Closed */}
