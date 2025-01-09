@@ -55,7 +55,7 @@ function Event() {
                   </div>
                   <span className='text-sm'>By clicking Reserve My Spot, you agree to our Terms and Conditions.</span>
                 </div>
-                <div id="eventRight" className='flex flex-col gap-5 items-center justify-center'>
+                {/* <div id="eventRight" className='flex flex-col gap-5 items-center justify-center'>
                   <h1 className='text-3xl text-center font-bold font-Montserrat'>Thu, 28 Nov</h1>
                   <div id="timeDuration" className='flex justify-center items-center gap-5 border text-white border-white font-Montserrat MobileM:p-3 p-0  divide-x-2'>
                     <div id='day' className='pl-5 text-center '>
@@ -78,7 +78,7 @@ function Event() {
                   <span style={{
                     background: 'linear-gradient(90deg, rgba(148,0,252,1) 0%, rgba(0,142,247,1) 100%, rgba(31,31,31,1) 100%)',
                   }} className='cursor-pointer text-white rounded-md font-semibold px-3 py-1 text-sm'>Event Ended !</span>
-                </div>
+                </div> */}
               </div>
 
               {/* Event Schedule section */}

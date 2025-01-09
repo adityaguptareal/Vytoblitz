@@ -61,12 +61,12 @@ function EventSchedule({ time, eventName, venue }) {
                     return (
                         <div key={index}>
                             <div className='flex  md:flex-row flex-col justify-between gap-2  md:items-center border-t border-white py-7 md:py-4  font-Montserrat w-3/4 mx-auto text-center'>
-                                <div className='lg:text-base text-[16px] md:text-[12px]'>{eventData.time}</div>
+                                {/* <div className='lg:text-base text-[16px] md:text-[12px]'>{eventData.time}</div> */}
                                 <div id="event" className='flex gap-3 justify-center items-center'>
                                     <div className='lg:text-lg text-[16px] md:text-[12px]'>{eventData.eventName}</div>
-                                    <div id="badge" className='text-slate-950 lg:text-sm text-[12px] px-2 font-semibold bg-white rounded-md '>
+                                    {/* <div id="badge" className='text-slate-950 lg:text-sm text-[12px] px-2 font-semibold bg-white rounded-md '>
                                         In Person
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div id="Venue" className='lg:text-base text-sm'>{eventData.venue}</div>
                                 <button onClick={()=>navigate(eventData.eventPage)} className='bg-transparent border lg:text-base text-sm border-white px-3 py-2'>View Details</button>
