@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 function ArtistryArena() {
-  const navigate=useNavigatee()
+  const navigate=useNavigate()
 
   const data = {
     title: "Artistry Arena",
