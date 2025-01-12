@@ -202,7 +202,7 @@ function Home() {
       </div>
       {/* Team Section */}
 
-      <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</motion.h1>
+      {/* <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Coordinators</motion.h1>
       <div className="overflow-hidden scrollGradient relative w-full h-[300px] flex items-center mt-10">
         <div className="team-image-slider flex  gap-12 animate-scroll">
 
@@ -225,7 +225,7 @@ function Home() {
           }
           )}
         </div>
-      </div>
+      </div> */}
       <div className=' container mx-auto my-20 w-full flex justify-center items-center overflow-x-hidden'>
 
 
