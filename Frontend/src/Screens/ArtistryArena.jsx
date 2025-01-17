@@ -18,7 +18,7 @@ function ArtistryArena() {
     date: "28 November 2024",
     location: "ITS Engineering LAB 3 ",
     time: "11 AM-12 PM",
-    rank1: " Abhinav Jain and Ritu Rani (Dronacharya)",
+    rank1: " Abhinav Jain and Ritu Rani (Dronacharya Group of Instituions)",
     rank2: "Abhay yadav (ITS Engineering College)",
     rank3: "Rahul raj yadav(ITS Engineering College)",
     image1: Images.ArtistryArena1,
