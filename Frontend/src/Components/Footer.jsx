@@ -75,7 +75,7 @@ function Footer() {
     </div>
     <div id="footerRight">
         <ul className='flex gap-4 text-[25px] '>
-            <li className=' text-white  font-Montserrat lg:text-sm text-[12px]'>Site Deisgned by <strong className='text-purple-300 font-semibold'><Link to={"https://adityaguptareal.com"}>Aditya Kumar Gupta</Link></strong></li>
+            <li className=' text-white  font-Montserrat lg:text-sm text-[12px]'>Site Designed by <strong className='text-purple-300 font-semibold'><Link to={"https://adityaguptareal.com"}>Aditya Kumar Gupta</Link></strong></li>
             <li className='hover:scale-[1.2] transition-all ease-linear cursor-pointer'>
                 <Link to={"https://www.linkedin.com/company/vytoflow-tech/posts/?feedView=all"}><FaLinkedin/>
                 </Link></li>
