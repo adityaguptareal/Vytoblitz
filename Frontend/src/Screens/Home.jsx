@@ -96,7 +96,7 @@ function Home() {
     <>
 
       <div className="relative  text-white w-screen h-full" id="MainScreen">
-        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url(${Images.VytFlowTeam})` }}></div>
+        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url("/DronxStudent.jpg")` }}></div>
         <Navbar />
         {/* Hero Section */}
         <div 
@@ -178,6 +178,7 @@ function Home() {
       {/* Explore Our Events */}
       <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center MobileM:px-0 '>
         <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-3xl md:text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</motion.h1>
+          <EventCard navigate={"/event/cultural"} src={"/DRONX.png"} date={"Thu 27th Mar 2025"} title={"Dron Workshop"} time={"10 AM-2 PM"} location={"ITS Engineering Ground"} registerBtnText={"More Information"} informationText={"More Info"} />
         <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/*  */}
@@ -187,7 +188,7 @@ function Home() {
         <EventCard navigate={"/event/esports"} src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/* VytoHackClash */}
-        <EventCard navigate={"/event/hackathon"} src={Images.Hackathon} date={"Thu 28th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
+        <EventCard navigate={"/event/hackathon"} src={Images.Hackathon} date={"Thu 27th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/* Cultural */}
         <EventCard navigate={"/event/cultural"} src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"More Information"} informationText={"More Info"} />
@@ -196,7 +197,7 @@ function Home() {
         {/* Event Gallery */}
         <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
           <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}}className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</motion.h1>
-          <SingleGallery src={Images.VytFlowTeam} />
+          <SingleGallery src={"/DRONXDroneShoot.jpg"} />
           <QuadGallery />
         </div>
       </div>

@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useForm, } from 'react-hook-form';
 import Navbar from '../Components/Navbar';
 import { Link } from "react-router-dom";
-import { auth } from "../config/firebaseconfig"
+// import { auth } from "../config/firebaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Footer from '../Components/Footer';
 
