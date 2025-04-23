@@ -35,7 +35,7 @@ export function AccordionCustomIcon() {
       </Accordion>
       <Accordion open={open === 2} icon={<Icon id={2} open={open}  />}>
         <AccordionHeader onClick={() => handleOpen(2)} style={{fontSize:"15px"}} >
-        Who can participate?
+        Who can participate in the fest?
         </AccordionHeader>
         <AccordionBody>
         The tech fest is open to all college students interested in technology and innovation. Whether you're a beginner or an expert, there's something for everyone. Come and showcase your talents!
