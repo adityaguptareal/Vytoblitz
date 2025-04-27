@@ -11,14 +11,14 @@ function EventSchedule({ time, eventName, venue }) {
         time: "10:00 AM",
         date: "28 Nov",
         eventName: "Algo Quizathon",
-        venue: "ITS Engineering LAB 4",
+        venue: "ITS Engineering College LAB 4",
         eventPage:"/event/quizathon"
     }, {
         id: 2,
         time: "11:00 AM",
         date: "28 Nov",
         eventName: "Artistry Arena",
-        venue: "TS Engineering LAB 3 ",
+        venue: "ITS Engineering College LAB 3 ",
         eventPage:"/event/artistryarena"
     },
     {
@@ -26,7 +26,7 @@ function EventSchedule({ time, eventName, venue }) {
         time: "12:00 AM",
         date: "28 Nov",
         eventName: "Esports Game",
-        venue: "ITS Engineering COE Room",
+        venue: "ITS Engineering College COE Room",
         eventPage:"/event/esports"
     }, {
         id: 4,
@@ -42,7 +42,7 @@ function EventSchedule({ time, eventName, venue }) {
         time: "10:00 AM",
         date: "29 Nov",
         eventName: "Cultural Carnival",
-        venue: "ITS Engineering Sardar Patel Auditoriam",
+        venue: "ITS Engineering Sardar Patel Auditorium",
         eventPage:"/event/cultural"
     }];
 
