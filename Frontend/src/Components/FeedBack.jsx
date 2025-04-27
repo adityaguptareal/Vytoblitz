@@ -6,38 +6,38 @@ function FeedBack() {
         {
             feedback: "Great event, learned a lot!",
             username: "Ravi Kumar",
-            position: "Software Engineer",
+            position: "GL Bajaj Insitute of Technology",
             rating: "⭐⭐⭐⭐⭐"
         },
         {
             feedback: "Amazing experience, highly recommend!",
             username: "Priya Sharma",
-            position: "Data Scientist",
+            position: "ITS Engineering College",
             rating: "⭐⭐⭐⭐"
         },
         {
             feedback: "Well organized and very informative.",
             username: "Amit Patel",
-            position: "Web Developer",
-            rating: "⭐⭐⭐⭐⭐"
+            position: "NIET College, Greater Noida",
+            rating: "⭐⭐⭐"
         },
         {
             feedback: "A fantastic opportunity to network.",
             username: "Sneha Gupta",
-            position: "Product Manager",
-            rating: "⭐⭐⭐⭐"
+            position: "GGSIPU College",
+            rating: "⭐⭐⭐"
         },
         {
             feedback: "Learned new skills and met great people.",
             username: "Vikram Singh",
-            position: "UX Designer",
+            position: "Galgotias University",
             rating: "⭐⭐⭐⭐⭐"
         },
         {
             feedback: "Incredible event, will attend again!",
             username: "Anjali Mehta",
-            position: "AI Researcher",
-            rating: "⭐⭐⭐⭐"
+            position: "ILM College, Greater Noida",
+            rating: "⭐⭐⭐⭐⭐"
         }
 
     ]
