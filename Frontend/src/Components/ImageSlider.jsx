@@ -3,16 +3,16 @@ import "../App.css"; // Import the custom styles for animation
 
 const ImageSlider = () => {
   const headings = [
-    "Programming Quiz",
-    "VytoHack Clash",
-    "Elite Combat",
-    "Artistry Arnea",
+    "Artistry Arena",
+    "Algo-Quizathon",
+    "Elite Combat Cup",
+    "Vyto-HackClash",
     "Cultural Carnival",
-    "Binary Beasts",
-    "Code Warriors",
-    "Error 404",
-    "MixiFy Dev",
-    "Tech Titans",
+    "Artistry Arena",
+    "Algo-Quizathon",
+    "Elite Combat Cup",
+    "Vyto-HackClash",
+    "Cultural Carnival",
   ]; // Array of headings
 
   return (
