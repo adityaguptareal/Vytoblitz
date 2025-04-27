@@ -37,20 +37,11 @@ function Footer() {
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/event"}>Event</Link></li>
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/about"}>About</Link></li>
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/contact"}>Contact</Link></li>
-        <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/registration"}>Registraion</Link></li>
+        {/* <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/registration"}>Registraion</Link></li> */}
         <li className='text-sm cursor-pointer hover:text-purple-500'><Link to={"/event#questions"}>FAQ</Link></li>
     </ul>
 </div>
-<div id='link' className='font-Montserrat'>
-    <span className='text-lg font-bold '>Resources</span>
-    <ul className='pt-4 flex flex-col gap-1'>
-        <li className='text-sm cursor-pointer hover:text-purple-500'>Blog</li>
-        <li className='text-sm cursor-pointer hover:text-purple-500'>Support</li>
-        <li className='text-sm cursor-pointer hover:text-purple-500'>Team</li>
-        <li className='text-sm cursor-pointer hover:text-purple-500'>Events</li>
-        <li className='text-sm cursor-pointer hover:text-purple-500'>Workshop</li>
-    </ul>
-</div>
+
 
 {/* Social Media Section */}
 <div id='link' className='font-Montserrat'>
@@ -67,11 +58,7 @@ function Footer() {
 <div className="flex flex-col md:flex-row justify-between gap-4 p-6 border-t-[0.7px] border-slate-700 md:items-center items-start pb-13 bg-gray-950 text-white  font-Montserrat lg:text-sm text-[12px]">
     <div id="footerLeft" className='flex flex-col md:flex-row gap-6 cursor-pointer'>
         <span>© {year} VytoFlowTech. All Right Reserved.</span>
-        <ul className='flex flex-row  gap-2 underline '>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
-            <li>Cookies Policy </li>
-        </ul>
+       
     </div>
     <div id="footerRight">
         <ul className='flex gap-4 text-[25px] '>
