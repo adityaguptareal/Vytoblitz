@@ -116,11 +116,11 @@ function Home() {
                 </p>
                 <p className="font-Montserrat text-sm md:text-base flex justify-center items-start text-left md:text-center  gap-3">
                   <FaLocationDot />
-                  ITS Engineering College, Greator Noida
+                  ITS Engineering College, Greater Noida
                 </p>
               </div>
               <p className="font-Montserrat text-sm md:text-base text-center  ">
-                Join VytoBlitz 1.0  (28 November, 2024) for Hackathons, Quizzes, and more. Unleash your
+                Join VytoBlitz 1.0  (27,28,29 November 2024) for Hackathons, Quizzes, and more. Unleash your
                 creativity and tech skills!
               </p>
             </div>
@@ -167,9 +167,9 @@ function Home() {
           )}
 
         </div>
-        <div id='right' className='lg:w-2/6 md:w-4/6 w-full flex flex-col items-center justify-center'>
+        <div id='right' className='lg:w-2/5 md:w-4/6 w-full flex flex-col items-center justify-center'>
           <h1 className='font-Orbitron font-extrabold text-3xl MobileM:text-4xl text-center my-4 xl:my-8'
-          >What is VytoBlitz ?</h1>
+          >What is VytoBlitz 1.0 ?</h1>
           <p className='font-Montserrat text-[14px] xl:text-base px-7 lg:px-0 text-center lg:text-left'>VytoBlitz is the Delhi / NCR level Tech Fest  of ITS Engineering College which is Organised by <b>VytoFlowTech</b> Community, celebrating innovation, creativity, and collaboration. <br />
             <br />
             Join us for an exciting lineup of competitions, workshops, and cultural activities that showcase the spirit of technology and teamwork</p>
@@ -178,23 +178,24 @@ function Home() {
       {/* Explore Our Events */}
       <div id='Event Section' className='flex flex-col flex-wrap gap-5 items-center MobileM:px-0 '>
         <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}} className='font-Orbitron text-3xl md:text-4xl font-bold  text-center  lg:py-6 underline'>Explore Our Events</motion.h1>
-          <EventCard navigate={"/event/cultural"} src={"/DRONX.png"} date={"Thu 27th Mar 2025"} title={"Dron Workshop"} time={"10 AM-2 PM"} location={"ITS Engineering Ground"} registerBtnText={"More Information"} informationText={"More Info"} />
-        <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Programming Quiz"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"More Information"} informationText={"More Info"} />
+         
+
+        <EventCard src={Images.Quizathon} navigate={"/event/quizathon"} date={"Thu 28th Nov 2024"} title={"Algo-Quizathon"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 4"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/*  */}
-        <EventCard navigate={"/event/artistryarena"} src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Canva Designing"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"More Information"} informationText={"More Info"} />
+        <EventCard navigate={"/event/artistryarena"} src={Images.ArtistryArena} date={"Thu 28th Nov 2024"} title={"Artistry Arena"} time={"10 AM-12 PM"} location={"ITS Engineering LAB 3"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/* Elite Combat */}
-        <EventCard navigate={"/event/esports"} src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Esports Game"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
+        <EventCard navigate={"/event/esports"} src={Images.Esports} date={"Thu 28th Nov 2024"} title={"Elite Combat Cup"} time={"10 AM-12 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/* VytoHackClash */}
-        <EventCard navigate={"/event/hackathon"} src={Images.Hackathon} date={"Thu 27th Nov 2024"} title={"Hackathon "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
+        <EventCard navigate={"/event/hackathon"} src={Images.Hackathon} date={"Thu 27th Nov 2024"} title={"Vyto-HackClash 1.0 "} time={"10 AM-4 PM"} location={"ITS Engineering COE Room"} registerBtnText={"More Information"} informationText={"More Info"} />
 
         {/* Cultural */}
-        <EventCard navigate={"/event/cultural"} src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditoriam"} registerBtnText={"More Information"} informationText={"More Info"} />
-      </div>
-      <div>
-        {/* Event Gallery */}
+          <EventCard navigate={"/event/cultural"} src={Images.Cultural} date={"Thu 29th Nov 2024"} title={"Cultural Carnival"} time={"10 AM-4 PM"} location={"ITS Sardar Patel Auditorium"} registerBtnText={"More Information"} informationText={"More Info"} />
+              </div>
+              <div>
+          {/* Event Gallery */}
         <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
           <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}}className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</motion.h1>
           <SingleGallery src={"/DRONXDroneShoot.jpg"} />
@@ -235,7 +236,7 @@ function Home() {
       <motion.div whileInView={{
         y: 10, opacity: "100%",
         transition: { duration: 1, delay: 1 }
-      }} initial={{ y: 100, opacity: "0%" }} className='font-Orbitron  text-6xl text-center my-48'>See You In The Event !</motion.div>
+      }} initial={{ y: 100, opacity: "0%" }} className='font-Orbitron  text-6xl text-center my-48'>Delhi/NCR level Fest !</motion.div>
       <Footer></Footer>
 
     </>

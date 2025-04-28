@@ -16,7 +16,7 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-bold font-Orbitron mb-6">About TechFest</h1>
+            <h1 className="text-4xl md:text-6xl font-bold font-Orbitron mb-6">About VytoBlitz 1.0</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto ">
               Learn about our mission, our team, and the impact we're making in the tech community
             </p>
@@ -34,7 +34,7 @@ function About() {
           >
             <h2 className="text-3xl font-bold font-Orbitron mb-6">Our Mission</h2>
             <p className="text-gray-300 mb-4">
-               aims to foster innovation, collaboration, and learning in the tech community. 
+               Aims to foster innovation, collaboration, and learning in the tech community. 
               We bring together students, professionals, and industry leaders to create an 
               environment of growth and discovery.
             </p>
@@ -75,7 +75,7 @@ function About() {
           >
             <h2 className="text-3xl font-bold font-Orbitron mb-6">Organiser</h2>
             <p className="text-gray-300 mb-4">
-              VytoBlitz is an event organized by VytoFlow, a tech community dedicated to fostering innovation and collaboration. 
+              VytoBlitz 1.0 is an event organized by VytoFlow, a tech community dedicated to fostering innovation and collaboration. 
               Led by President Ansh Singh, VytoFlow brings together students, professionals, and industry leaders to create an 
               environment of growth and discovery.
             </p>

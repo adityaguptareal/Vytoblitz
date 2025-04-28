@@ -355,7 +355,7 @@ function Event() {
                   </div>
                   <div id="step1" className='flex flex-wrap flex-col gap-2 justify-center items-center p-4'>
                     <div className='rounded-full bg-white w-[60px] h-[60px] flex justify-center items-center text-slate-950 text-2xl font-bold'>2</div>
-                    <h1 className=' text-center font-Montserrat text-2xl font-bold '>Step 2: Prepare Your Project Submission</h1>
+                    <h1 className=' text-center font-Montserrat text-2xl font-bold '>Step 2: Prepare for the Event</h1>
                     <p className='text-center text-sm'>Ensure your project meets the event guidelines.</p>
                   </div>
                   <div id="step1" className='flex flex-wrap flex-col gap-2 justify-center items-center p-4'>

@@ -12,10 +12,10 @@ function Esports() {
   const navigate=useNavigate()
 
   const data = {
-    title: "Elite Combat",
+    title: "Elite Combat Cup",
     description: "Join the ultimate eSports showdown! Compete with top gamers, showcase your skills, and battle for supremacy in our online gaming event. Get ready for intense action, thrilling matches, and a chance to be crowned the champion.",
     date: "28 November 2024",
-    location: "Online",
+    location: "Offline (ITS Engineering College, Greater Noida)",
     time: "10 AM-12 PM",
     rank1: "Khoonkhar College (ITS Engineering College)",
     rank2: "A04 College (NIU COLLEGE)",
@@ -114,7 +114,7 @@ function Esports() {
       <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>
         <h2 className='text-3xl font-bold mb-5'>Event Description</h2>
         <p className='mb-5'>
-          The Elite Combat is an exhilarating online gaming event where participants can showcase their gaming skills. This event is perfect for those who love competitive gaming and want to challenge themselves against top players.
+          The Elite Combat Cup is an exhilarating online gaming event where participants can showcase their gaming skills. This event is perfect for those who love competitive gaming and want to challenge themselves against top players.
         </p>
         <p className='mb-5'>
           Participants will compete in various rounds of intense gaming action. The event will be held online, providing a convenient and accessible platform for all gamers to join and compete from the comfort of their homes.

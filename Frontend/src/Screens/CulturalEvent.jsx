@@ -17,7 +17,7 @@ function Cultural() {
     title: "Cultural Carnival",
     description: "Join us for the Cultural Carnival, a vibrant celebration of diverse cultures through music, dance, art, and food. Experience the richness of traditions from around the world and enjoy a day filled with performances, workshops, and culinary delights.",
     date: "29 November 2024",
-    location: "ITS Sardar Patel Auditoriam ",
+    location: "ITS Sardar Patel Auditorium ",
     time: "10 AM-4 PM",
     rank1: "Luck Sharma Palchil Singh",
     rank2: "Sakshi Kumari, Shourya Tyagi",
@@ -117,7 +117,7 @@ function Cultural() {
       </motion.div>
 
       {/* Winners Section */}
-      <motion.div
+      {/* <motion.div
         className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ function Cultural() {
           <li className='mb-3'><strong>2nd Place:</strong> {data.rank2}</li>
           <li className='mb-3'><strong>3rd Place:</strong> {data.rank3}</li>
         </ul>
-      </motion.div>
+      </motion.div> */}
 
       {/* Event Description Section */}
       <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>

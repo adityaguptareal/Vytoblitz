@@ -18,9 +18,9 @@ function Hackathon() {
     description: "Participate in the VytoHack Clash, a premier hackathon event where innovative minds come together to solve real-world problems. Showcase your coding skills, collaborate with peers, and compete for exciting prizes.",
     date: "28 November 2024",
     location: "ITS Engineering COE Room  ",
-    time: "11 AM-4 PM",
+    time: "36hrs Hackathon",
     rank1: "Team Forth - GGSIPU ",
-    rank2: "Team Mixify Dev - I.T.S Engg.",
+    rank2: "Team Mixify Dev - I.T.S Engineering College",
     rank3: "Team Error 404 - GGSIPU",
     image1: Images.Hackathon2,
     image2: Images.Hackathon1,
@@ -132,7 +132,7 @@ function Hackathon() {
 
       {/* Event Schedule Section */}
       <div className='px-10 md:px-20 lg:px-40 py-10 text-white font-Montserrat'>
-        <h2 className='text-3xl font-bold mb-5'>Event Schedule</h2>
+        <h2 className='text-3xl font-bold mb-5'>Event Schedule for 28 November 2024</h2>
         <ul className='list-disc list-inside'>
           <li className='mb-3'><strong>10:00 AM - 10:30 AM:</strong> Registration and Welcome</li>
           <li className='mb-3'><strong>10:30 AM - 11:30 AM:</strong> Design Round Start</li>
