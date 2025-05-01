@@ -96,7 +96,7 @@ function Home() {
     <>
 
       <div className="relative  text-white w-screen h-full" id="MainScreen">
-        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url("/DronxStudent.jpg")` }}></div>
+        <div className="absolute  top-0 z-[2] h-full bg-no-repeat w-screen opacity-35 bg-cover bg-bottom" style={{ backgroundImage: `url("/Background.jpeg")` }}></div>
         <Navbar />
         {/* Hero Section */}
         <div 
@@ -163,7 +163,7 @@ function Home() {
               <Skeleton style={{ width: "500px", height: "280px", borderRadius: "10px" }} />
             </SkeletonTheme>
           ) : (
-            <img src={Images.CollegeAuditoriam} className='w-[500px] xl-[500px] rounded-3xl' alt="VytoFlow Group Image" />
+            <img src={"/Background.jpeg"} className='w-[500px]  rounded-3xl' alt="VytoFlow Group Image" />
           )}
 
         </div>
@@ -198,7 +198,7 @@ function Home() {
           {/* Event Gallery */}
         <div id="EventGallery" className='my-16 flex flex-col justify-center items-center max-w-[680px] mx-auto'>
           <motion.h1 initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{type:"spring",duration:2,delayChildren:0.5,debounce:0.25}}className='font-Orbitron text-4xl font-bold my-12 underline  text-center  lg:py-6 '>Event Gallery</motion.h1>
-          <SingleGallery src={"/DRONXDroneShoot.jpg"} />
+          <SingleGallery src={"/Event6.jpeg"} />
           <QuadGallery />
         </div>
       </div>

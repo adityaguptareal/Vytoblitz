@@ -3,19 +3,19 @@ export function QuadGallery({}) {
     const data = [
       {
         imageLink:
-          "/DronxStudentGathering.jpg",
+          "/Event1.jpeg",
       },
       {
         imageLink:
-        "/DronxStudent.jpg",
+        "/Event2.jpeg",
       },
       {
         imageLink:
-        "/DronxMeeting.jpg",
+        "/Event3.jpeg",
       },
       {
         imageLink:
-        "/DronxGroundGathering.jpg",
+        "/Event4.jpeg",
       },
     ];
    
