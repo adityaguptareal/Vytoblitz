@@ -1,4 +1,4 @@
-/* Scrolling animation */
+
 @keyframes scroll {
   from {
     transform: translateX(0%);
